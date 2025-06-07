@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+
+    /* font-size  */
+    --font-heading1: 5rem;
+    --font-heading2: 3.5rem;
+    --font-heading3: 2.2rem;
+    --font-para1: 2.2rem;
+    --font-para2: 1.8rem;
+    --font-para3: 1.4rem;
+    --font-para4: 1.1rem;
+
+}
+
+
+/* Chrome, Safari, Edge, Opera */
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+/* Box Model Fix (Universal Box-Sizing) */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Inherit Basic Styles */
+html {
+    font-family: 'Arial', sans-serif;
+    font-size: 62.5%;
+    line-height: 1.5;
+    color: #333;
+    text-size-adjust: 100%;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    line-height: inherit;
+
+}
+
+/* Set default font style for block elements */
+
+/* Reset list styles */
+ul,
+ol {
+    list-style: none;
+    padding-left: 0;
+}
+
+/* Remove default link styling */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Ensure tables have borders */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    padding: 0.5em;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+/* Set up default form input styling */
+input,
+button,
+select,
+textarea {
+    font-family: inherit;
+    font-size: inherit;
+    border: 1px solid #ccc;
+    background: #fff;
+    padding: 0.5em;
+    margin: 0.25em 0;
+    line-height: 1.5;
+}
+
+/* Add basic styling for images */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Reset default block and inline elements' spacing */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+nav,
+section,
+summary {
+    display: block;
+}
+
+/* Fix for inline-block issues */
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Global HTML Styling */
+html,
+body {
+    height: 100%;
+}
+
+/* Prevent unwanted overflow */
+body {
+    overflow-x: hidden;
+}
+
+/* footer section starts here  */
+
+footer {
+    background-color: blue;
+    min-height: 50vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Extra commont classes  */
+.title {
+    padding: 1rem 4rem;
+    border-radius: 0.5rem;
+    width: fit-content;
+    font-size: var(--font-para1);
+    background-color: rgb(255, 146, 3);
+    color: white;
+    font-weight: bold;
+}

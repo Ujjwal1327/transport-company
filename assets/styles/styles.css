@@ -9,23 +9,27 @@ body {
 .landing {
   position: relative;
   /* border: 1px solid red; */
-  min-height: 90vh;
+  min-height: 40vh;
   background: url("/assets//images//hero.jpg");
   background-size: cover;
+  padding-bottom: 2rem;
 }
 
 .landing .container {
-  padding-top: 5rem;
+  padding: 1rem 0rem;
   /* border: 1px solid red; */
   color: white;
   text-align: center;
-  width: 60%;
+  width: 80%;
   margin: auto;
+  margin-bottom: 5rem;
 }
 
 .landing .container h1 {
   font-size: var(--font-heading1);
   margin: 2rem 0rem;
+  width: 100%;
+  /* border: 1px solid red; */
 }
 
 .landing .container p {
@@ -49,16 +53,16 @@ body {
 
 .landing img:nth-child(3) {
   position: absolute;
-  bottom: 0%;
+  bottom: -10%;
   left: 0;
-  width: 45rem;
+  width: 35rem;
 }
 
 .landing img:nth-child(2) {
   position: absolute;
-  bottom: 0%;
+  bottom: -10%;
   right: 0;
-  width: 45rem;
+  width: 35rem;
 }
 
 /* landing section css ends  */
@@ -76,24 +80,24 @@ body {
 .about .arrow_side_grip {
   position: absolute;
   top: 5rem;
-  left: 10rem;
+  left: 2rem;
 }
 
 .about .about_truck {
   position: absolute;
-  bottom: 0rem;
+  bottom: -15rem;
   right: 0rem;
 }
 
 .about .container {
   /* border: 1px solid black; */
-  width: 70%;
+  width: 80%;
   margin: auto;
-  padding: 5rem 5rem;
+  padding: 5rem 1rem;
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  gap: 5rem;
+  gap: 2rem;
 }
 
 .about .container .aboutImg {
@@ -113,6 +117,7 @@ body {
   right: 0;
   border: 0.5rem solid white;
   width: 15rem;
+  height: auto;
   overflow: hidden;
   border-radius: 1.5rem;
 }
@@ -139,7 +144,7 @@ body {
 
 .about .container .content h2 {
   margin: 4rem 0rem;
-  font-size: var(--font-heading1);
+  font-size: var(--font-heading2);
   line-height: 5rem;
 }
 
@@ -150,6 +155,7 @@ body {
 .about .container .content .options {
   display: grid;
   row-gap: 1rem;
+  column-gap: 2rem;
   grid-template-columns: auto auto;
   width: 100%;
   border-left: 0.7rem solid rgb(255, 146, 3);
@@ -179,6 +185,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-wrap: nowrap;
   border: 1px solid green;
   font-size: var(--font-para2);
   background-color: rgb(78, 78, 252);
@@ -196,6 +203,7 @@ body {
   background-color: white;
   padding: 1rem;
   border-radius: 0.4rem;
+
 }
 
 .about .container .content .contact>div {
@@ -225,6 +233,7 @@ body {
   justify-content: flex-start;
   /* border: 1px solid red; */
   font-size: var(--font-para2);
+  text-wrap: nowrap;
 }
 
 .about .container .content .contact>div .number>span:nth-child(1) {
@@ -250,7 +259,7 @@ body {
   padding: 10rem 0rem;
 }
 
-.services p {
+.services>p {
   width: 50%;
   font-size: var(--font-para2);
   text-align: center;
@@ -281,7 +290,7 @@ body {
 
 .services .cards .eachCard img {
   height: 20rem;
-  width: 40rem;
+  min-width: 100%;
 }
 
 .services .cards .eachCard h3 {
@@ -289,7 +298,8 @@ body {
 }
 
 .services .cards .eachCard p {
-  width: 100%;
+  width: 90%;
+  margin: auto;
 }
 
 .services .cards .eachCard button {
@@ -309,7 +319,7 @@ body {
 .experience {
   background: url("/assets/images/footer_BG.jpg");
   background-size: cover;
-  min-height: 30rem;
+  /* min-height: 40rem; */
   padding: 4rem;
   position: relative;
   margin-bottom: 8rem;
@@ -321,19 +331,21 @@ body {
   color: white;
   font-size: var(--font-heading3);
   /* margin-bottom: 3rem; */
-  width: 40%;
+  width: 50%;
   margin-bottom: 3rem;
 
 }
 
-.experience div {
+.experience>div:nth-child(2) {
   margin: auto;
+  margin-bottom: 10rem;
+  text-wrap: nowrap;
 }
 
 .experience .container {
   color: white;
   /* border: 1px solid red; */
-  width: 70%;
+  /* width: 70%; */
   margin: auto;
   display: flex;
   justify-content: space-around;
@@ -341,10 +353,13 @@ body {
   background-color: rgb(255, 146, 3);
   padding: 2rem;
   border-radius: 1rem;
+  gap: 3rem;
   position: absolute;
   bottom: -20%;
   left: 50%;
+  width: 80%;
   transform: translateX(-50%);
+
 }
 
 .experience .container div {
@@ -357,10 +372,11 @@ body {
   align-items: center;
   justify-content: center;
   gap: .5rem;
+  text-wrap: nowrap;
 }
 
 .experience .container div .fa-solid {
-  font-size: var(--font-heading2);
+  font-size: var(--font-heading3);
 }
 
 .experience .container div span {
@@ -386,7 +402,7 @@ body {
 
 .why .container1 h2 {
   font-size: var(--font-heading2);
-  width: 40%;
+  width: 80%;
   margin: 2rem 0rem;
 }
 
@@ -413,12 +429,14 @@ body {
 .why .container2 .right {
   flex: 1;
   /* border: 1px solid red; */
+  margin: 2rem;
 }
 
 .why .container2 .right .item {
   display: flex;
   /* border: 1px solid black; */
   align-items: center;
+  gap: 1rem;
   justify-content: space-around;
   margin: 6rem 0rem;
 }
@@ -447,7 +465,7 @@ body {
 
 .why .container2 .right .item .icon .orange .fa-solid {
   color: rgb(255, 146, 3);
-  font-size: 3rem;
+  font-size: var(--font-heading3);
 }
 
 .why .container2 .right .text {
@@ -464,3 +482,158 @@ body {
 }
 
 /* footer section starts from here  */
+
+
+@media (max-width: 1100px) {
+  .landing .container {
+    width: 90%;
+  }
+
+  .landing .container p {
+    margin-bottom: 1rem;
+    width: 90%;
+  }
+
+  .landing .container button {
+    margin-top: 1rem;
+  }
+
+  .landing img:nth-child(3) {
+    display: none;
+  }
+
+  .landing img:nth-child(2) {
+    display: none;
+  }
+
+  .about .about_truck {
+    display: none;
+  }
+
+  .about .arrow_side_grip {
+    display: none;
+  }
+
+  .about .container {
+    /* border: 1px solid black; */
+    width: 90%;
+  }
+
+  .services>p {
+    width: 90%;
+    font-size: var(--font-para2);
+    text-align: center;
+  }
+
+  .services .cards {
+    width: 85%;
+    /* Increase width for more space */
+    gap: 2.5rem;
+    /* Reduce gap slightly */
+    flex-wrap: wrap;
+    /* Allow cards to wrap to the next line */
+    justify-content: center;
+    /* Center cards in the row */
+  }
+
+  .services .cards .eachCard {
+    /*
+         Allow two cards per row (approx. 50% width minus half of the gap)
+         flex-grow: 0 (don't grow), flex-shrink: 0 (don't shrink below basis), flex-basis: calculated width
+        */
+    flex: 0 0 calc(50% - 1.25rem);
+    /* 50% width minus half the new gap (2.5rem / 2) */
+    margin-bottom: 2.5rem;
+    /* Add vertical space between rows */
+    min-width: unset;
+    /* Remove min-width constraint to allow calc() to work */
+    max-width: unset;
+    /* Remove max-width constraint */
+  }
+
+  .why .container1 {
+    width: 90%;
+    margin: 2rem auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .about .container {
+    flex-direction: column;
+    gap: 7rem;
+  }
+
+  .services .cards {
+    width: 90%;
+    /* Increase width even more */
+    gap: 2rem;
+    /* Further reduce the gap */
+  }
+
+  .services .cards .eachCard {
+    flex: 0 0 calc(100% - 1rem);
+    margin-bottom: 2rem;
+  }
+
+  .experience p {
+    width: 80%;
+  }
+
+  .experience .container {
+    flex-wrap: wrap;
+    bottom: -20%;
+    width: 80%;
+    /* align-items: flex-start; */
+    /* justify-content: flex-start; */
+  }
+
+  .why .container1 h2 {
+    width: 100%;
+  }
+
+  .why .container2 {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .why .container2 img {
+    width: 100%;
+  }
+
+
+}
+
+@media (max-width: 454px) {
+  .about .container .content h2 {
+    line-height: 3rem;
+  }
+
+  .about .container .content .contact {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+    width: 100%;
+
+  }
+
+  .about .container .content .options {
+grid-template-columns: auto;
+}
+  .why .container2 .right {
+    width: 90%;
+    /* border: 1px solid red; */
+    margin: auto;
+  }
+
+  .why .container2 .right .item {
+    align-items: flex-start;
+    flex-direction: column;
+    /* border: 1px solid red; */
+  }
+
+  .why .container2 .right .text {
+    /* border: 1px solid red; */
+    width: 100%;
+  }
+}

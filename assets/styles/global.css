@@ -9,7 +9,7 @@
     - preferred_value: A value relative to the viewport width (e.g., 5vw for 5% of viewport width).
     - maximum_value: The largest size the font will be.
   */
-    --font-heading1: clamp(3.5rem, 6vw, 7rem);
+    --font-heading1: clamp(2.5rem, 6vw, 7rem);
     /* Scales from 35px to 70px, with 6vw in between */
     --font-heading2: clamp(2.5rem, 4.5vw, 5rem);
     --font-heading3: clamp(1.8rem, 3vw, 3.5rem);
@@ -145,7 +145,6 @@ body {
 
 /* navbar css start */
 .nav .top {
-    /* border: 1px solid red; */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -161,6 +160,8 @@ body {
     align-items: center;
     gap: 0.8rem;
     color: var(--header-color);
+    /* border: 1px solid red; */
+
 }
 
 .top-info .social {
@@ -275,6 +276,16 @@ body {
 }
 
 @media (max-width: 767px) {
+    .nav .top {
+   
+    padding: 1rem 2rem;
+}
+    .top-info {
+        flex-direction: column;
+     align-items: flex-start;
+
+    }
+
     .nav .bottom .menu {
         display: none;
     }
@@ -307,9 +318,9 @@ footer {
 footer .anchor_tags {
     color: blue;
     margin: 3rem 0rem;
-    width: 80%;
+    width: 90%;
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns:auto auto auto auto auto auto auto;
     text-align: center;
     gap: 1rem;
     font-size: var(--font-para3);
@@ -317,10 +328,30 @@ footer .anchor_tags {
 
 footer .anchor_tags a {
     color: gray;
+    position: relative;
+    text-align: left;
+    /* border: 1px solid red; */
+    font-size: var(--font-para4);
 }
 
 footer .anchor_tags a:hover {
     text-decoration: underline;
+}
+
+footer .anchor_tags a::before {
+
+    content: "";
+    position: absolute;
+    height: .7rem;
+    width: .7rem;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -10%;
+    border-radius: 50%;
+    background-color: rgb(255, 146, 3);
+
+
+
 }
 
 footer iframe {
@@ -335,7 +366,10 @@ footer .actual_footer {
     background: url("/assets/images/footer_BG.jpg");
     background-size: cover;
     padding: 2rem 0rem;
+
 }
+
+
 
 footer .top {
     padding-top: 4rem;
@@ -451,16 +485,16 @@ footer .bottom a:hover {
 }
 
 @media (max-width: 454px) {
-        footer .anchor_tags {
-            text-align: left;
-        width: 90%;
+    footer .anchor_tags {
+        text-align: left;
+        width: 80%;
         grid-template-columns: auto;
-
     }
+
     footer .top {
         flex-direction: column;
         align-items: flex-start;
-            gap: 2rem;
+        gap: 2rem;
         width: 90%;
     }
 
@@ -474,7 +508,7 @@ footer .bottom a:hover {
         /* Optional: Center text inside each div */
     }
 
- 
+
 
 
 

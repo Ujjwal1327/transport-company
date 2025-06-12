@@ -319,7 +319,6 @@ body {
 .experience {
   background: url("/assets/images/footer_BG.jpg");
   background-size: cover;
-  /* min-height: 40rem; */
   padding: 4rem;
   position: relative;
   margin-bottom: 8rem;

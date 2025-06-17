@@ -15,6 +15,13 @@
 <body>
     <!-- this is navbar  -->
     <nav class="nav">
+        <div id="res-menu">
+            <i id="cut" class="fa fa-close"></i>
+            <a href="/">Home</a>
+            <a href="/about.html">About Us</a>
+            <a href="/service.html">Service</a>
+            <a href="/contact.html" class="active">Contact</a>
+        </div>
         <div class="top">
             <img src="assets/images/logo.svg" alt="Nextgen safe n secure car transport pvt. ltd. logo" />
             <div class="top-info">
@@ -47,13 +54,12 @@
                 <span>|</span>
                 <a href="/contact.html" class="active">Contact</a>
                 <span>|</span>
-                <a href="/">Pages</a>
+                <a style="display: none" href="/">Pages</a>
             </div>
             <div class="button">
                 <button>Request Quote</button>
             </div>
-            <i class="fa-solid fa-bars"></i>
-
+            <i class="fa-solid fa-bars" id="ham-burger" ></i>
         </div>
     </nav>
     <!-- this is first screen  -->
@@ -164,6 +170,7 @@
             </div>
         </div>
     </section>
+    <script src="assets/script.js"></script>
 </body>
 
 </html>

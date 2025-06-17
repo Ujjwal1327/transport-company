@@ -18,8 +18,8 @@
     --font-para3: clamp(1.2rem, 1.5vw, 1.4rem);
     --font-para4: clamp(1rem, 1.2vw, 1.1rem);
     /* font-color  */
-    --header-color: "#1c1f35";
-    --sub-header-color: "#4d4d4d";
+    --header-color: #1c1f35;
+    --sub-header-color: #4d4d4d;
 }
 
 
@@ -43,15 +43,14 @@ input[type=number]::-webkit-inner-spin-button {
 
 /* Inherit Basic Styles */
 html {
-    font-family: 'Arial', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 62.5%;
-    line-height: 1.5;
+    line-height: 1.2;
     color: #333;
     text-size-adjust: 100%;
 }
 
 body {
-    font-family: "Montserrat", sans-serif;
 
     font-family: inherit;
     font-size: inherit;
@@ -153,6 +152,10 @@ body {
     padding: 1rem 20rem;
 }
 
+.nav #res-menu {
+    display: none;
+}
+
 .top-info {
     font-size: var(--font-para3);
     font-weight: 700;
@@ -190,7 +193,6 @@ body {
     align-items: center;
     justify-content: space-between;
     background-color: #00214C;
-    color: white;
     padding: 0 20rem;
     font-size: var(--font-para2);
     color: var(--header-color);
@@ -277,12 +279,41 @@ body {
 
 @media (max-width: 767px) {
     .nav .top {
-   
-    padding: 1rem 2rem;
-}
+        padding: 1rem 2rem;
+    }
+
+    .nav #res-menu {
+        position: fixed;
+        color: white;
+        z-index: 9999;
+        background-color: #00214C;
+        width: 100%;
+        height: 100vh;
+        padding: 4rem;
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        font-size: var(--font-heading2);
+        display: none;
+    }
+
+    .nav #res-menu i {
+        font-size: var(--font-heading1);
+        position: absolute;
+        right: 1rem;
+        top: 1rem;
+        cursor: pointer;
+    }
+
+    .nav #res-menu a:hover {
+        cursor: pointer;
+        color: orange;
+    }
+
+
     .top-info {
         flex-direction: column;
-     align-items: flex-start;
+        align-items: flex-start;
 
     }
 
@@ -290,12 +321,14 @@ body {
         display: none;
     }
 
+    .nav .bottom .menu span {
+        display: none;
+    }
+
     .nav .bottom .fa-bars {
         display: block;
     }
 }
-
-
 
 
 
@@ -320,7 +353,7 @@ footer .anchor_tags {
     margin: 3rem 0rem;
     width: 90%;
     display: grid;
-    grid-template-columns:auto auto auto auto auto auto auto;
+    grid-template-columns: auto auto auto auto auto auto auto;
     text-align: center;
     gap: 1rem;
     font-size: var(--font-para3);

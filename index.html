@@ -16,6 +16,13 @@
 <body>
   <!-- this is navbar  -->
   <nav class="nav">
+    <div id="res-menu">
+      <i id="cut" class="fa fa-close"></i>
+      <a href="/">Home</a>
+      <a href="/about.html">About Us</a>
+      <a href="/service.html">Service</a>
+      <a href="/contact.html" class="active">Contact Us</a>
+    </div>
     <div class="top">
       <img src="assets/images/logo.svg" alt="Nextgen safe n secure car transport pvt. ltd. logo" />
       <div class="top-info">
@@ -46,15 +53,14 @@
         <span>|</span>
         <a href="/service.html">Service</a>
         <span>|</span>
-        <a href="/contact.html">Contact</a>
+        <a href="/contact.html">Contact Us</a>
         <span>|</span>
-        <a href="/">Pages</a>
+        <a style="display: none" href="/">Pages</a>
       </div>
       <div class="button">
         <button>Request Quote</button>
       </div>
-      <i class="fa-solid fa-bars"></i>
-
+      <i class="fa-solid fa-bars" id="ham-burger"></i>
     </div>
   </nav>
   <!-- this is landing section  -->
@@ -74,22 +80,21 @@
   <!-- this is about section  -->
   <section class="about">
     <div class="container">
-      <img src="assets/images/arrow-side_grip.png" alt="" class="arrow_side_grip">
-      <img src="assets/images/about_truck.png" alt="" class="about_truck">
       <div class="aboutImg">
         <img src="assets/images/about1.jpg" alt="">
-        <div>
-          <img src="assets/images/about2.jpg" alt="">
-        </div>
       </div>
       <div class="content">
         <div class="title">
           About Us
         </div>
         <h2>We'll keep your items damage free</h2>
-        <p>From Secure Loading to professional handling, our trained team ensures your car or goods reaches its
-          destination scratch free.
-          <br>
+        <p>From secure loading to professional handling, our trained team ensures your car or goods reaches its
+          destination scratch-free. Our experienced loading crew and drivers have achieved over 95% scratch-free
+          shipping, and we track your car, bike, and furniture throughout the journey until it’s delivered to you. We
+          provide safe and secure transportation for car, household shifting, office shifting, and bike transport. We
+          implement cutting-edge securing tools and packing methods to ensure your belongings arrive safely and
+          undamaged at your home. 
+          <br><br>
           <br>
           Safety and security are NextGen’s core principle.
         </p>
@@ -127,12 +132,32 @@
       Our Services
     </div>
     <p>
-      From Secure Loading to professional handling, our trained team ensures your car or goods reaches its destination
-      scratch free.
+      Our mission is to ensure your car, bike, and furniture reaches safely and securely to your destination. We offer
+      five services specifically tailored for individuals, professionals, and businesses, each of which can be
+      customized to meet your needs. Explore these services to get the best and most smooth transport experience, saving
+      you money and time. Understanding these services will also ensure the safety of your car, household, office, and
+      bike during the shift. 
       <br><br>
-      Safety and security are NextGen’s core principle.
     </p>
     <div class="cards">
+      <div class="eachCard">
+        <img src="assets/images/about1.jpg" alt="">
+        <h3>Car transport</h3>
+        <p>Safe, fast and insured vehicle
+          transportation across India tailored
+          for dealers, showroom and Individuals.
+        </p>
+        <button>Explore More</button>
+      </div>
+      <div class="eachCard">
+        <img src="assets/images/about1.jpg" alt="">
+        <h3>Car transport</h3>
+        <p>Safe, fast and insured vehicle
+          transportation across India tailored
+          for dealers, showroom and Individuals.
+        </p>
+        <button>Explore More</button>
+      </div>
       <div class="eachCard">
         <img src="assets/images/about1.jpg" alt="">
         <h3>Car transport</h3>
@@ -194,10 +219,13 @@
         Why choose Us
       </div>
       <h2>Why we are considered the best in business</h2>
-      <p>NexGen Car transport and Logistics stands out in the market with its honest and hard to beat pricing, safety
-        and security, on time delivery and personalized service for each client ⎯ whether You are moving your car, bike
-        or furniture transport and Logistics stands out in the market with its honest and hard to beat pricing, safety
-        and personalized service for each client ⎯ whether You are moving your car, bike.</p>
+      <p>NexGen Car Transport and Logistics stands out in the market with its honest and unbeatable pricing, safety and
+        security, on-time delivery, and personalised service for each client. Whether you’re moving your car, bike,
+        household, or furniture, we’ve got you covered. Have any questions about car transport, quotations, or anything
+        else? Our 24/7 customer support team is here to help. Our honesty and affordability have earned us one of the
+        best car transporter tags in the market. We also offer the best moving solutions for furniture shifting,
+        household shifting, and bike transport. For extra safety, you can buy transit insurance for your car, household
+        shifting, or office shifting. You can get the exact quote for your goods. Just give us a call.</p>
     </div>
     <div class="container2">
       <img src="assets/images/aeroplane.png" alt="">
@@ -210,7 +238,8 @@
           </div>
           <div class="text">
             <h3>Safe Logistics Operation</h3>
-            <p>City to city warehouse service to keep your goods safe and secure.</p>
+            <p>With nine years of experience in the transport industry, we guarantee to protect your product reaches its
+              destination safely and undamaged.</p>
           </div>
         </div>
         <div class="item">
@@ -221,8 +250,8 @@
           </div>
           <div class="text">
             <h3>Modern Warehouse Technique </h3>
-            <p>Our 9 years of experience ensures your product reaches safely
-              to the destination without a scratch.</p>
+            <p>Our city-to-city warehouse service ensures your goods are safely and securely stored, with guards
+              safeguarding their safety throughout the journey.</p>
           </div>
         </div>
         <div class="item">
@@ -233,7 +262,8 @@
           </div>
           <div class="text">
             <h3>GPS - Real Time Tracking</h3>
-            <p>We offer real-time tracking services for your car, bike, and furniture using GPS.</p>
+            <p>We offer real-time tracking services for your car, bike, and furniture using GPS. This helps you gain
+              better control over your belongings.</p>
           </div>
         </div>
       </div>
@@ -356,6 +386,7 @@
     </div>
 
   </footer>
+  <script src="assets/script.js"></script>
 </body>
 
 </html>

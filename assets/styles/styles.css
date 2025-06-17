@@ -77,27 +77,16 @@ body {
   /* border: 1px solid red; */
 }
 
-.about .arrow_side_grip {
-  position: absolute;
-  top: 5rem;
-  left: 2rem;
-}
-
-.about .about_truck {
-  position: absolute;
-  bottom: -15rem;
-  right: 0rem;
-}
 
 .about .container {
   /* border: 1px solid black; */
-  width: 80%;
+  width: 90%;
   margin: auto;
   padding: 5rem 1rem;
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  gap: 2rem;
+  gap: 4rem;
 }
 
 .about .container .aboutImg {
@@ -107,8 +96,7 @@ body {
 }
 
 .about .container .aboutImg img:nth-child(1) {
-  width: 30rem;
-  border-radius: 0.5rem;
+  border-radius: 1.4rem;
 }
 
 .about .container .aboutImg div {
@@ -144,12 +132,13 @@ body {
 
 .about .container .content h2 {
   margin: 4rem 0rem;
-  font-size: var(--font-heading2);
+  font-size: var(--font-heading3);
   line-height: 5rem;
 }
 
 .about .container .content p {
   font-size: var(--font-para2);
+  line-height: 1.5;
 }
 
 .about .container .content .options {
@@ -260,13 +249,13 @@ body {
 }
 
 .services>p {
-  width: 50%;
+  width: 80%;
   font-size: var(--font-para2);
   text-align: center;
 }
 
 .services .cards {
-  width: 70%;
+  width: 80%;
   /* border: 1px solid red; */
   margin: auto;
   display: flex;
@@ -275,6 +264,7 @@ body {
   gap: 4rem;
   font-size: var(--font-para2);
   text-align: center;
+  flex-wrap: wrap;
 }
 
 .services .cards .eachCard {
@@ -283,9 +273,14 @@ body {
   align-items: center;
   justify-content: center;
   gap: 0.2rem;
+  /* border: 1px solid red; */
+  flex-wrap: wrap;
   background-color: white;
   border-radius: 0.8rem;
   overflow: hidden;
+  /* min-width: 10%; */
+  max-width: 30%;
+
 }
 
 .services .cards .eachCard img {
@@ -395,7 +390,7 @@ body {
 }
 
 .why .container1 {
-  width: 70%;
+  width: 90%;
   margin: 2rem auto;
 }
 
@@ -406,7 +401,7 @@ body {
 }
 
 .why .container1 p {
-  font-size: var(--font-para3);
+  font-size: var(--font-para2);
   color: rgb(71, 71, 71);
 }
 
@@ -434,7 +429,7 @@ body {
 .why .container2 .right .item {
   display: flex;
   /* border: 1px solid black; */
-  align-items: center;
+  align-items: flex-start;
   gap: 1rem;
   justify-content: space-around;
   margin: 6rem 0rem;
@@ -468,16 +463,17 @@ body {
 }
 
 .why .container2 .right .text {
-  /* border: 1px solid red; */
   width: 70%;
 }
 
 .why .container2 .right .text h3 {
   font-size: var(--font-para2);
+  
 }
 
 .why .container2 .right .text p {
-  font-size: var(--font-para3);
+  margin-top: 1rem;
+  font-size: var(--font-para2);
 }
 
 /* footer section starts from here  */
@@ -505,13 +501,7 @@ body {
     display: none;
   }
 
-  .about .about_truck {
-    display: none;
-  }
-
-  .about .arrow_side_grip {
-    display: none;
-  }
+  /* about section start from here .  */
 
   .about .container {
     /* border: 1px solid black; */
@@ -617,8 +607,9 @@ body {
   }
 
   .about .container .content .options {
-grid-template-columns: auto;
-}
+    grid-template-columns: auto;
+  }
+
   .why .container2 .right {
     width: 90%;
     /* border: 1px solid red; */

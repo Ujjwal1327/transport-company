@@ -1,0 +1,296 @@
+body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-optical-sizing: auto;
+}
+
+.landing {
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url("/assets/images/footer_BG.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.landing h1 {
+    font-size: var(--font-heading1);
+    font-weight: bold;
+    color: transparent;
+    font-size: 12rem;
+    -webkit-text-stroke: 2px white;
+    /* White outline */
+    text-transform: uppercase;
+}
+
+/* ************************************************************* */
+
+/* overview  */
+
+/* ************************************************************* */
+
+
+.overview {
+    /* border: 12px solid red; */
+
+    padding: 5rem 0rem;
+    background-color: var(--light-blue);
+}
+
+.overview .container {
+    width: 90%;
+    margin: auto;
+}
+
+.overview h2 {
+    color: var(--deep-orange);
+    font-size: var(--font-heading2);
+    margin-bottom: 2rem;
+}
+
+.overview p {
+    margin-top: 0rem;
+    font-size: var(--font-para2);
+}
+
+.why {
+    min-height: 100vh;
+    /* border: 1px solid red; */
+}
+
+.why .container {
+
+    width: 90%;
+    margin: 5rem auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.why .container .left {
+    /* border: 1px solid red; */
+    width: 40%;
+    position: relative;
+}
+
+.why .container .left img {
+    border-radius: 2rem;
+    width: 80%;
+    height: auto;
+    display: block;
+}
+
+.why .container .left img:nth-child(2) {
+    position: absolute;
+    bottom: -10%;
+    right: 0;
+    width: 60%;
+    /* ✅ Add this */
+    max-width: 250px;
+    /* ✅ Optional - to control max size */
+    /* transform: translateY(-50%); */
+    z-index: 2;
+}
+
+.why .container .right {
+    /* border: 1px solid red; */
+    width: 60%;
+}
+
+.why .container .right>span {
+    color: var(--deep-orange);
+    font-size: var(--font-heading3);
+
+
+}
+
+.why .container .right h2 {
+    color: var(--sub-header-color);
+    font-size: var(--font-heading3);
+    margin: 3rem 0rem;
+}
+
+.why .container .right>p {
+    color: var(--sub-header-color);
+    font-size: var(--font-para2);
+    line-height: 1.5;
+    margin-bottom: 5rem;
+    letter-spacing: .1rem;
+}
+
+.why .container .right div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2rem;
+    margin-bottom: 1rem;
+}
+
+.why .container .right div div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--deep-orange);
+    font-size: var(--font-para3);
+    min-height: 2.5rem;
+    min-width: 2.5rem;
+    border-radius: 50%;
+    color: white;
+}
+
+.why .container .right div p {
+    font-size: var(--font-para2);
+    font-weight: bold;
+
+}
+
+
+
+.timeline {
+
+    background-color: var(--light-blue);
+    padding: 4rem 0rem;
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.timeline .timeline-line {
+    width: 100%;
+    height: .2rem;
+    background-color: var(--sub-header-color);
+    /* background-color: red; */
+    position: relative;
+    padding: 0rem 5rem;
+}
+
+.timeline .timeline-line .dot {
+    width: 3rem;
+    height: 3rem;
+    background-color: white;
+    border: 0.7rem solid var(--deep-orange);
+    position: absolute;
+    top: 0;
+    transform: translateY(-50%);
+    border-radius: 50%;
+}
+
+.timeline .timeline-line .dot div {
+    position: absolute;
+    /* top: -400%; */
+    left: 50%;
+    transform: translate(-50%, 0%);
+    font-size: var(--font-para2);
+    text-align: center;
+    /* border: 1px solid black; */
+    text-wrap: nowrap;
+}
+
+
+
+.timeline .timeline-line #dot1 {
+    left: 20%;
+}
+
+.timeline .timeline-line #dot1 div {
+    top: -400%;
+}
+
+
+
+.timeline .timeline-line #dot2 {
+    left: 40%;
+}
+
+.timeline .timeline-line #dot2 div {
+    bottom: -400%;
+}
+
+.timeline .timeline-line #dot3 {
+    left: 60%;
+}
+
+.timeline .timeline-line #dot3 div {
+    top: -400%;
+}
+
+.timeline .timeline-line #dot4 {
+    left: 80%;
+}
+
+.timeline .timeline-line #dot4 div {
+    bottom: -400%;
+}
+
+
+.mission {
+    min-height: 50vh;
+    text-align: center;
+    padding: 3rem 5%;
+
+}
+
+.mission>h2 {
+    color: var(--deep-orange);
+    font-size: var(--font-heading3);
+}
+
+.mission>p {
+    color: var(--sub-header-color);
+    font-size: var(--font-para2);
+    /* width: 90%; */
+    margin: 4rem auto;
+    line-height: 1.3;
+}
+
+.mission .container {
+    border: 2px solid gray;
+    border-radius: 4rem;
+    background-color: var(--light-blue);
+    text-align: left;
+    padding: 5rem;
+    width: 70%;
+}
+
+.mission .container h3 {
+    color: var(--header-color);
+    font-size: var(--font-heading3);
+}
+
+.mission .container>p {
+    width: 80%;
+    margin-top: 2rem;
+    font-size: var(--font-para2);
+    line-height: 1.3;
+    margin-bottom: 2rem;
+}
+
+.mission .container > div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    /* border: 1px solid red; */
+    gap: 2rem;
+    margin-bottom: 1rem;
+}
+
+.mission .container div div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--deep-orange);
+    font-size: var(--font-para3);
+    min-height: 2.5rem;
+    min-width: 2.5rem;
+    border-radius: 50%;
+    color: white;
+}
+
+.mission .container div p {
+    line-height: 1;
+    font-size: var(--font-para3);
+}

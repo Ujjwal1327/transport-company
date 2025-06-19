@@ -1,12 +1,12 @@
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: "Montserrat", sans-serif;
+
 }
 
-
-/* navbar css ends  */
 /* Landing section css ends  */
 .landing {
+
   position: relative;
   /* border: 1px solid red; */
   min-height: 40vh;
@@ -20,7 +20,7 @@ body {
   /* border: 1px solid red; */
   color: white;
   text-align: center;
-  width: 80%;
+  width: 90%;
   margin: auto;
   margin-bottom: 5rem;
 }
@@ -35,48 +35,96 @@ body {
 .landing .container p {
   font-size: var(--font-para1);
   margin: 3rem 0rem;
-  width: 70%;
+  width: 90%;
   margin: auto;
+  letter-spacing: .15rem;
 }
 
 .landing .container button {
-  font-size: var(--font-para2);
-  border: 1px solid gray;
+  font-size: var(--font-para3);
+  border: 1px solid rgb(238, 238, 238);
   padding: 1.5rem 2.5rem;
-  background-color: rgb(255, 146, 3);
-  margin: 8rem 0rem 0rem 0rem;
+  background-color: var(--deep-orange);
+  margin-top: 8rem;
   cursor: pointer;
   color: white;
-  font-weight: 400;
   z-index: 999;
+  color: black;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+
+
 }
 
 .landing img:nth-child(3) {
   position: absolute;
-  bottom: -10%;
+  bottom: -30%;
   left: 0;
-  width: 35rem;
+  width: 45rem;
+  /* border: 1px solid red; */
 }
 
 .landing img:nth-child(2) {
   position: absolute;
-  bottom: -10%;
+  bottom: -30%;
+  /* border: 1px solid red; */
   right: 0;
-  width: 35rem;
+  width: 45rem;
 }
 
 /* landing section css ends  */
 
-/* testimonial section css ends  */
+
+
+/* testimonial section css start  */
+
 .testimonials {
-  /* min-height: 50vh;   */
+  min-height: 20vh;
+  padding: 5rem 0rem;
+  background-color: var(--deep-blue);
+  margin-top: 12rem;
+
 }
 
+.testimonials .container {
+
+  /* border: 1px solid red; */
+  display: flex;
+  width: 90%;
+  margin: auto;
+  gap: 4rem;
+}
+
+.testimonials .container form {
+  background-color: var(--deep-orange);
+  border-radius: 2rem;
+  width: 35%;
+  min-height: 60vh;
+
+}
+
+.testimonials .container .content {
+  width: 65%;
+}
+
+.testimonials .container .content h3 {
+  font-size: var(--font-heading2);
+  margin: 2rem 0rem;
+  color: white;
+}
+
+.testimonials .container .content p {
+  color: white;
+  font-size: var(--font-para2);
+  margin-top: 2rem;
+}
+
+/* testimonial section css ends  */
 .about {
+  /* margin-top: 10rem; */
   position: relative;
   /* border: 1px solid red; */
 }
-
 
 .about .container {
   /* border: 1px solid black; */
@@ -84,35 +132,33 @@ body {
   margin: auto;
   padding: 5rem 1rem;
   display: flex;
-  align-items: flex-start;
+  align-items: stretch;
   justify-content: center;
+  /* border: 1px solid red; */
   gap: 4rem;
 }
 
 .about .container .aboutImg {
-  /* border: 1px solid red; */
-  flex: 0.4;
+  /* flex: 0 0 30%; */
+  /* min-height: 320px; */
+  /* aspect-ratio: 4/3; */
+  flex: 0.3;
   position: relative;
+  height: 100%;
+  /* border: 1px solid red; */
 }
 
-.about .container .aboutImg img:nth-child(1) {
-  border-radius: 1.4rem;
+.about .container .aboutImg img {
+  border-radius: 1.9rem;
+  width: 100%;
+  /* object-fit: cover; */
+  /* border: 1px solid red; */
 }
 
-.about .container .aboutImg div {
-  position: absolute;
-  top: 55%;
-  right: 0;
-  border: 0.5rem solid white;
-  width: 15rem;
-  height: auto;
-  overflow: hidden;
-  border-radius: 1.5rem;
-}
 
 
 .about .container .content {
-  flex: 0.6;
+  flex: 0.7;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -125,13 +171,13 @@ body {
   border-radius: 0.5rem;
   width: fit-content;
   font-size: var(--font-para1);
-  background-color: rgb(255, 146, 3);
+  background-color: var(--deep-orange);
   color: white;
   font-weight: bold;
 }
 
 .about .container .content h2 {
-  margin: 4rem 0rem;
+  margin: 1rem 0rem;
   font-size: var(--font-heading3);
   line-height: 5rem;
 }
@@ -143,11 +189,12 @@ body {
 
 .about .container .content .options {
   display: grid;
+  /* border: 1px solid red; */
   row-gap: 1rem;
-  column-gap: 2rem;
+  /* column-gap: 1rem; */
   grid-template-columns: auto auto;
-  width: 100%;
-  border-left: 0.7rem solid rgb(255, 146, 3);
+  width: 90%;
+  border-left: 0.7rem solid var(--deep-orange);
   padding-left: 1rem;
 }
 
@@ -227,7 +274,7 @@ body {
 
 .about .container .content .contact>div .number>span:nth-child(1) {
   font-weight: bold;
-  color: rgb(255, 146, 3);
+  color: var(--deep-orange);
 }
 
 .about .container .content .contact>div .number>span:nth-child(2) {
@@ -241,11 +288,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 5rem;
+  gap: 3rem;
   flex-direction: column;
   min-height: 50vh;
   background-color: #F2F7FA;
-  padding: 10rem 0rem;
+  padding: 4rem 0rem;
 }
 
 .services>p {
@@ -280,6 +327,7 @@ body {
   overflow: hidden;
   /* min-width: 10%; */
   max-width: 30%;
+  border: 1px solid black;
 
 }
 
@@ -289,12 +337,16 @@ body {
 }
 
 .services .cards .eachCard h3 {
-  margin: 3rem 0rem 2rem 0rem;
+  margin: 2rem 0rem;
+  color: var(--header-color);
 }
 
 .services .cards .eachCard p {
-  width: 90%;
+  width: 95%;
   margin: auto;
+  /* margin-bottom: 2rem; */
+  font-weight: 500;
+  font-size: var(--font-para2);
 }
 
 .services .cards .eachCard button {
@@ -344,7 +396,7 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: rgb(255, 146, 3);
+  background-color: var(--deep-orange);
   padding: 2rem;
   border-radius: 1rem;
   gap: 3rem;
@@ -374,7 +426,7 @@ body {
 }
 
 .experience .container div span {
-  font-size: var(--font-heading2);
+  font-size: var(--font-heading3);
 }
 
 
@@ -458,7 +510,7 @@ body {
 }
 
 .why .container2 .right .item .icon .orange .fa-solid {
-  color: rgb(255, 146, 3);
+  color: var(--deep-orange);
   font-size: var(--font-heading3);
 }
 
@@ -468,7 +520,7 @@ body {
 
 .why .container2 .right .text h3 {
   font-size: var(--font-para2);
-  
+
 }
 
 .why .container2 .right .text p {
@@ -501,11 +553,36 @@ body {
     display: none;
   }
 
+  .testimonials {
+
+    margin-top: 0rem;
+
+  }
+
+  .testimonials .container {
+    /* border: 1px solid black; */
+    gap: 2rem;
+  }
+
+  .testimonials .container form {
+    width: 40%;
+
+  }
+
+  .testimonials .container .content {
+    width: 60%;
+  }
+
   /* about section start from here .  */
 
   .about .container {
     /* border: 1px solid black; */
     width: 90%;
+  }
+
+  .about .container .aboutImg {
+    flex: 0 0 40%;
+
   }
 
   .services>p {

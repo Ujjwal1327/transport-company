@@ -1,0 +1,212 @@
+body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-optical-sizing: auto;
+}
+
+/* ************************************************************* */
+/* Landing  */
+/* ************************************************************* */
+.landing {
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url("/assets/images/footer_BG.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.landing h1 {
+    font-size: var(--font-heading1);
+    font-weight: bold;
+    color: transparent;
+    font-size: 7rem;
+    font-family: sans-serif;
+    -webkit-text-stroke: 2px white;
+    /* White outline */
+    text-transform: uppercase;
+}
+
+/* ************************************************************* */
+/* first  */
+/* ************************************************************* */
+.first {
+    background-color: var(--light-blue);
+    padding: 5rem 10rem;
+}
+
+.first h2 {
+    font-size: var(--font-heading3);
+    margin-bottom: 3rem;
+}
+
+.first p {
+    font-size: var(--font-para2);
+    margin-bottom: 2rem;
+}
+
+/* ************************************************************* */
+/* second  */
+/* ************************************************************* */
+.second {
+    padding: 5rem 10rem;
+}
+
+.second h2 {
+    font-size: var(--font-heading3);
+    margin-bottom: 3rem;
+}
+
+.second p {
+    font-size: var(--font-para2);
+    margin-bottom: 2rem;
+    line-height: 1.5;
+    letter-spacing: 0.2rem;
+    color: var(--sub-header-color);
+}
+
+.second p img {
+    float: right;
+}
+
+/* ************************************************************* */
+/* advantages  */
+/* ************************************************************* */
+.advantages .container1 {
+    min-height: 50vh;
+    background: url("/assets/images/about-page-exp-bg.jpg");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: var(--font-heading3);
+}
+
+.advantages .container2 {
+    padding: 10rem;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 5rem;
+}
+
+.advantages .container2 h3 {
+    font-size: var(--font-heading3);
+    color: var(--header-color);
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.advantages .container2 h3::after {
+    content: "";
+    position: absolute;
+    background-color: var(--deep-orange);
+    bottom: -10%;
+    left: 0;
+    width: 10%;
+    height: 3px;
+}
+
+
+.advantages .container2 p {
+    font-size: var(--font-para2);
+    line-height: 1.5;
+    color: var(--sub-header-color);
+}
+
+/* ************************************************************* */
+/* how  */
+/* ************************************************************* */
+
+.how {
+    padding: 10rem;
+}
+
+.how h2 {
+    font-size: var(--font-heading3);
+    color: var(--header-color);
+    margin-bottom: 4rem;
+}
+
+.how div {
+    margin-bottom: 4rem;
+}
+
+.how div h3 {
+    font-size: var(--font-para1);
+    color: var(--header-color);
+    margin-bottom: 1rem;
+}
+
+.how div p {
+    font-size: var(--font-para2);
+    line-height: 1.5;
+    color: var(--sub-header-color);
+}
+
+/* ************************************************************* */
+/* cost  */
+/* ************************************************************* */
+.cost {
+    padding: 5rem 10rem;
+    background-color: var(--light-blue);
+}
+
+.cost h2 {
+    font-size: var(--font-heading3);
+    color: var(--header-color);
+    margin-bottom: 2rem;
+}
+
+.cost p {
+    font-size: var(--font-para2);
+    color: var(--sub-header-color);
+    margin-bottom: 1rem;
+}
+
+/* ************************************************************* */
+/* factors  */
+/* ************************************************************* */
+.factors .container1 {
+    min-height: 50vh;
+    background: url("/assets/images/about-page-exp-bg.jpg");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: var(--font-heading3);
+    flex-direction: column;
+}
+
+.factors .container1 h2 {
+    margin-bottom: 2rem;
+}
+
+.factors .container1 p {
+    font-size: var(--font-para1);
+    text-align: center;
+    width: 40%;
+    font-weight: bolder;
+}
+
+.factors .container2 {
+    padding: 5rem 10rem;
+}
+
+.factors .container2 div {
+    margin-bottom: 3rem;
+}
+
+.factors .container2 h3 {
+    font-size: var(--font-heading3);
+    color: var(--header-color);
+    margin-bottom: 1rem;
+}
+
+.factors .container2 p {
+    font-size: var(--font-para2);
+    color: var(--sub-header-color);
+}

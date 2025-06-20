@@ -349,12 +349,14 @@ body {
   font-size: var(--font-para2);
 }
 
-.services .cards .eachCard button {
+.services .cards .eachCard a {
   width: 100%;
+  outline: none;
   border: none;
-  background-color: #00214C;
+  padding: 0.7rem;
+  background-color: var(--deep-blue);
   color: white;
-  border-radius: 0.7rem;
+  border-radius: 0.4rem;
   cursor: pointer;
   margin-bottom: 0px;
   font-weight: bold;

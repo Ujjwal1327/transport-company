@@ -12,7 +12,7 @@ body {
   position: relative;
   /* border: 1px solid red; */
   min-height: 40vh;
-  background: url("/assets//images//hero.jpg");
+  background: url("../images/hero.jpg");
   background-size: cover;
   padding-bottom: 2rem;
 }
@@ -305,10 +305,9 @@ body {
 
 .services .cards {
   width: 80%;
-  /* border: 1px solid red; */
   margin: auto;
   display: flex;
-  align-items: center;
+  align-items: stretch; /* ensures all cards are same height */
   justify-content: center;
   gap: 4rem;
   font-size: var(--font-para2);
@@ -319,19 +318,15 @@ body {
 .services .cards .eachCard {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 0.2rem;
-  /* border: 1px solid red; */
-  flex-wrap: wrap;
+  justify-content: space-between; /* Distributes space inside */
+  flex: 1 1 30%;
   background-color: white;
   border-radius: 0.8rem;
   overflow: hidden;
-  /* min-width: 10%; */
   max-width: 30%;
   border: 1px solid black;
-
 }
+
 
 .services .cards .eachCard img {
   height: 20rem;
@@ -346,7 +341,7 @@ body {
 .services .cards .eachCard p {
   width: 95%;
   margin: auto;
-  /* margin-bottom: 2rem; */
+  margin-bottom: 2rem;
   font-weight: 500;
   font-size: var(--font-para2);
 }

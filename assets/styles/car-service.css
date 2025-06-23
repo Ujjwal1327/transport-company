@@ -82,7 +82,9 @@ body {
 /* advantages  */
 /* ************************************************************* */
 .advantages .container1 {
-    min-height: 50vh;
+    /* max-height: 30vh; */
+    /* min-height: 30vh; */
+    /* border: 1px solid red; */
     background: url("/assets/images/about-page-exp-bg.jpg");
     background-size: cover;
     display: flex;
@@ -90,6 +92,9 @@ body {
     justify-content: center;
     color: white;
     font-size: var(--font-heading3);
+}
+.advantages .container1 h2 {
+        margin: 7rem 3rem;
 }
 
 .advantages .container2 {
@@ -193,10 +198,7 @@ body {
 .why .container>div:last-child {
     /* border: 1px solid red; */
     width: 60%;
-
 }
-
-
 
 /* ************************************************************* */
 /* how  */
@@ -213,7 +215,8 @@ body {
 }
 
 .how>div {
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
+
 }
 
 .how div h3 {
@@ -279,7 +282,7 @@ body {
 /* factors  */
 /* ************************************************************* */
 .factors .container1 {
-    min-height: 50vh;
+    /* min-height: 50vh; */
     background: url("/assets/images/about-page-exp-bg.jpg");
     background-size: cover;
     display: flex;
@@ -288,10 +291,11 @@ body {
     color: white;
     font-size: var(--font-heading3);
     flex-direction: column;
+    text-align: center;
 }
 
 .factors .container1 h2 {
-    margin-bottom: 2rem;
+    margin: 2rem 0rem;
 }
 
 .factors .container1 p {
@@ -299,14 +303,16 @@ body {
     text-align: center;
     width: 40%;
     font-weight: bolder;
+    margin: 2rem 0rem;
 }
 
 .factors .container2 {
-    padding: 5rem 10rem;
+    padding: 5rem;
+    /* border: 1px solid red; */
 }
 
 .factors .container2 div {
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
 }
 
 .factors .container2 h3 {
@@ -349,12 +355,50 @@ body {
     .second {
         padding: 4rem;
     }
-
+.advantages .container1 h2 {
+        margin: 3rem 1rem;
+}
     .advantages .container2 {
         padding: 4rem;
         gap: 3rem;
     }
 
+    .why {
+        padding: 4rem;
+    }
+
+    .why>img {
+        display: none;
+    }
+
+    .why .container>div:last-child {
+        width: 100%;
+    }
+
+    .how {
+        padding: 4rem;
+    }
+
+    .how div .options {
+        gap: 1rem;
+    }
+
+    .cost {
+        padding: 4rem;
+    }
+
+    .factors .container1 {
+        text-align: center;
+        padding: 3rem;
+    }
+
+    .factors .container1 p {
+        width: 90%;
+    }
+
+    .factors .container2 {
+        padding: 4rem;
+    }
 }
 
 @media (max-width: 767px) {
@@ -399,6 +443,35 @@ body {
         font-size: var(--font-heading3);
     }
 
+    .why {
+        padding: 3rem;
+    }
+
+    .why .container>div .icon {
+        min-height: 8rem;
+        min-width: 8rem;
+    }
+
+    .how {
+        padding: 3rem;
+    }
+
+    .how div .options {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .cost {
+        padding: 3rem;
+    }
+
+    .factors .container2 {
+        padding: 3rem;
+    }
+
+    .factors .container2 {
+        padding: 4rem;
+    }
 
 }
 
@@ -407,5 +480,14 @@ body {
         padding: 3rem;
         grid-template-columns: auto;
         gap: 2rem;
+    }
+
+    .why .container>div .icon {
+        max-height: 8rem;
+        max-width: 8rem;
+    }
+
+    .why .container>div {
+        flex-direction: column;
     }
 }

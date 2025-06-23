@@ -69,7 +69,7 @@ body {
     align-items: flex-start;
     justify-content: center;
     gap: 2rem;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .why .container .left {
@@ -153,76 +153,18 @@ body {
 /* Timeline  */
 /* ************************************************************* */
 .timeline {
-
-    background-color: var(--light-blue);
-    padding: 4rem 0rem;
-    min-height: 50vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.timeline .timeline-line {
-    width: 100%;
-    height: .2rem;
-    background-color: var(--sub-header-color);
-    /* background-color: red; */
-    position: relative;
-    padding: 0rem 5rem;
-}
-
-.timeline .timeline-line .dot {
-    width: 3rem;
-    height: 3rem;
-    background-color: white;
-    border: 0.7rem solid var(--deep-orange);
-    position: absolute;
-    top: 0;
-    transform: translateY(-50%);
-    border-radius: 50%;
-}
-
-.timeline .timeline-line .dot div {
-    position: absolute;
-    /* top: -400%; */
-    left: 50%;
-    transform: translate(-50%, 0%);
-    font-size: var(--font-para2);
+    /* border: 1px solid red; */
+    min-height: 20vh;
     text-align: center;
-    /* border: 1px solid black; */
-    text-wrap: nowrap;
+    /* Optional: centers the image */
+    padding: 1rem;
 }
 
-.timeline .timeline-line #dot1 {
-    left: 20%;
-}
-
-.timeline .timeline-line #dot1 div {
-    top: -400%;
-}
-
-.timeline .timeline-line #dot2 {
-    left: 40%;
-}
-
-.timeline .timeline-line #dot2 div {
-    bottom: -400%;
-}
-
-.timeline .timeline-line #dot3 {
-    left: 60%;
-}
-
-.timeline .timeline-line #dot3 div {
-    top: -400%;
-}
-
-.timeline .timeline-line #dot4 {
-    left: 80%;
-}
-
-.timeline .timeline-line #dot4 div {
-    bottom: -400%;
+.timeline img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
 /* ************************************************************* */
@@ -351,7 +293,6 @@ body {
 .priority {
     padding: 5rem 10rem 0rem 10rem;
     padding-bottom: 0rem;
-
 }
 
 .priority>h2 {
@@ -419,7 +360,7 @@ body {
     width: 80%;
     margin-top: 2rem;
     font-size: var(--font-para2);
-        margin-bottom: 5rem;
+    margin-bottom: 5rem;
 
 }
 
@@ -556,6 +497,21 @@ body {
         font-size: 5rem;
     }
 
+
+
+    .timeline .timeline-line .dot div {
+        position: absolute;
+        /* top: -400%; */
+        /* left: 150%; */
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 400%;
+        font-size: var(--font-para2);
+        text-align: center;
+        border: 1px solid black;
+        text-wrap: nowrap;
+    }
+
     .mission .container {
 
         width: 100%;
@@ -623,15 +579,30 @@ body {
         padding-bottom: 2rem;
         /* border: 1px solid red; */
     }
-.services .container>div .icon {
 
-    min-height: 4rem;
-    min-width: 4rem;
+    .services .container>div .icon {
 
-}
+        min-height: 4rem;
+        min-width: 4rem;
+
+    }
+
     .services .container>div .content p {
         width: 100%;
         margin-top: 1rem;
+    }
+
+    .pnc .top {
+        flex-direction: column;
+    }
+
+    .pnc img {
+        width: 70%;
+    }
+
+    .pnc .top .content {
+        width: 90%;
+        margin: auto;
     }
 
     .pnc .bottom>p {

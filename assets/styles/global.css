@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
 :root {
     /* font-size  */
@@ -15,7 +16,7 @@
     --font-heading3: clamp(1.8rem, 3vw, 3.5rem);
     --font-para1: clamp(1.6rem, 2.5vw, 2.2rem);
     --font-para2: clamp(1.4rem, 2vw, 1.8rem);
-    --font-para3: clamp(1.2rem, 1.5vw, 1.4rem);
+    --font-para3: clamp(1.3rem, 1.5vw, 1.4rem);
     --font-para4: clamp(1rem, 1.2vw, 1.1rem);
     /* font-color  */
     --header-color: #1c1f35;
@@ -174,6 +175,8 @@ body {
 }
 
 .top-info .social {
+    border-left: 2px solid black;
+    padding-left: 1rem;
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -184,7 +187,7 @@ body {
 .top-info .social .icons {
     display: flex;
     align-items: flex-start;
-    gap: 2rem;
+    gap: 1rem;
     justify-content: center;
     color: var(--header-color);
 }
@@ -255,8 +258,22 @@ body {
 .nav .bottom .button {
     height: 6rem;
     display: flex;
+
     align-items: center;
     justify-content: center;
+    height: 100%;
+    border: none;
+    background-color: white;
+    outline: none;
+    padding: 0rem 2rem;
+    min-height: 6rem;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.nav .bottom .button:hover {
+    background-color: var(--deep-orange);
+    color: white;
 }
 
 .nav .bottom button {
@@ -360,8 +377,12 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* gap: 3rem; */
+}
 
+footer .line {
+    background-color: red;
+    width: 100%;
+    border: 1px solid gray;
 }
 
 footer .anchor_tags {
@@ -371,7 +392,6 @@ footer .anchor_tags {
     display: grid;
     grid-template-columns: auto auto auto auto auto;
     text-align: center;
-    /* border: 1px solid red; */
     gap: 3rem;
     row-gap: 1rem;
     font-size: var(--font-para3);
@@ -409,7 +429,7 @@ footer iframe {
     height: 20rem;
     border: 0;
     width: 100%;
-    /* border: 1px solid red; */
+    /* border: 10px solid red; */
 }
 
 footer .actual_footer {
@@ -421,7 +441,7 @@ footer .actual_footer {
 
 footer .top {
     padding-top: 4rem;
-    width: 70%;
+    width: 90%;
     margin: auto;
     display: flex;
     align-items: flex-start;
@@ -455,6 +475,8 @@ footer .top>div .social .icon:hover {
     color: rgb(255, 146, 3);
 }
 
+
+
 footer .top>div a {
     font-size: var(--font-para3);
     display: block;
@@ -469,12 +491,12 @@ footer .top>div p {
 }
 
 footer .top>div h3 {
-    font-size: var(--font-heading3);
+    font-size: var(--font-para1);
     margin-bottom: 2rem;
 }
 
 footer hr {
-    width: 70%;
+    width: 90%;
     margin: auto;
     height: 0.2rem;
     margin: 2rem auto;
@@ -482,7 +504,7 @@ footer hr {
 }
 
 footer .bottom {
-    width: 70%;
+    width: 90%;
     margin: auto;
     display: flex;
     align-items: center;
@@ -493,6 +515,14 @@ footer .bottom {
 
 footer .bottom a:hover {
     color: rgb(255, 146, 3);
+}
+
+footer .top>div:nth-child(4) div {
+    font-size: var(--font-para3);
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 /* ************************************************************* */
@@ -533,7 +563,6 @@ footer .bottom a:hover {
         flex: 0 0 calc(50% - 1rem);
         margin-bottom: 2rem;
     }
-
 }
 
 /* media @ 454  */

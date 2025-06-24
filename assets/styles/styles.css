@@ -8,7 +8,6 @@ body {
 /* landing section  */
 /* ************************************************************* */
 .landing {
-
   position: relative;
   /* border: 1px solid red; */
   min-height: 40vh;
@@ -48,7 +47,6 @@ body {
   border: 1px solid rgb(238, 238, 238);
   padding: 1.5rem 2.5rem;
   background-color: var(--deep-orange);
-  margin-top: 8rem;
   cursor: pointer;
   color: white;
   z-index: 999;
@@ -94,7 +92,6 @@ body {
 }
 
 .testimonials .container {
-
   /* border: 1px solid red; */
   display: flex;
   width: 90%;
@@ -191,11 +188,13 @@ body {
   line-height: 5rem;
   /* border: 1px solid red; */
   font-family: "Ubuntu", sans-serif;
+  color: var(--header-color);
 }
 
 .about .container .content p {
   font-size: var(--font-para3);
   line-height: 1.5;
+  color: var(--sub-header-color);
 }
 
 .about .container .content h3 {
@@ -210,7 +209,7 @@ body {
   height: 0.5rem;
   content: "";
   position: absolute;
-  top: -15%;
+  top: -30%;
   left: 0;
 }
 
@@ -223,11 +222,12 @@ body {
   width: 90%;
   border-left: 0.7rem solid var(--deep-orange);
   padding-left: 1rem;
+  color: var(--header-color);
 }
 
 .about .container .content .options span {
   font-size: var(--font-para2);
-  color: black;
+  color: var(--header-color);
   font-weight: bold;
   display: flex;
   align-items: center;
@@ -307,6 +307,8 @@ body {
 .about .container .content .contact>div .number>span:nth-child(2) {
   font-weight: bold;
   font-size: var(--font-para3);
+
+  color: var(--header-color);
 }
 
 /* ************************************************************* */
@@ -328,6 +330,7 @@ body {
   width: 80%;
   font-size: var(--font-para2);
   text-align: center;
+  color: var(--sub-header-color);
 }
 
 .services .cards {
@@ -373,6 +376,7 @@ body {
   margin-bottom: 2rem;
   font-weight: 500;
   font-size: var(--font-para2);
+  color: var(--sub-header-color);
 }
 
 .services .cards .eachCard a {
@@ -480,12 +484,13 @@ body {
   font-size: var(--font-heading2);
   width: 80%;
   margin: 2rem 0rem;
+  color: var(--header-color);
   font-family: "Ubuntu", sans-serif;
 }
 
 .why .container1 p {
   font-size: var(--font-para2);
-  color: rgb(71, 71, 71);
+  color: var(--sub-header-color);
 }
 
 .why .container2 {
@@ -511,7 +516,6 @@ body {
 
 .why .container2 .right .item {
   display: flex;
-  /* border: 1px solid black; */
   align-items: flex-start;
   gap: 1rem;
   justify-content: flex-start;
@@ -522,8 +526,8 @@ body {
 .why .container2 .right .item .icon {
   /* border: 1px solid rgb(99, 99, 99); */
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 10px;
-  width: 8rem;
-  height: 8rem;
+  max-width: 8rem;
+  max-height: 8rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -539,11 +543,12 @@ body {
   justify-content: center;
   width: 6rem;
   height: 6rem;
+
 }
 
 .why .container2 .right .item .icon .orange .fa-solid {
   color: var(--deep-orange);
-  font-size: var(--font-heading3);
+  font-size: var(--font-para1);
 }
 
 .why .container2 .right .text {
@@ -552,12 +557,14 @@ body {
 
 .why .container2 .right .text h3 {
   font-size: var(--font-para1);
+  color: var(--header-color);
 
 }
 
 .why .container2 .right .text p {
   margin-top: 1rem;
   font-size: var(--font-para3);
+  color: var(--sub-header-color);
 }
 
 /* footer section starts from here  */
@@ -565,16 +572,18 @@ body {
 
 @media (max-width: 1100px) {
   .landing .container {
-    width: 90%;
+    width: 100%;
+    /* border: 1px solid red; */
+    margin-bottom: 0rem;
   }
 
   .landing .container p {
     margin-bottom: 1rem;
-    width: 90%;
+    width: 95%;
   }
 
-  .landing .container button {
-    margin-top: 1rem;
+  .landing .container a {
+    margin-bottom: 0rem;
   }
 
   .landing img:nth-child(3) {
@@ -585,10 +594,9 @@ body {
     display: none;
   }
 
+
   .testimonials {
-
     margin-top: 0rem;
-
   }
 
   .testimonials .container {
@@ -658,7 +666,7 @@ body {
 @media (max-width: 767px) {
   .about .container {
     flex-direction: column;
-    gap: 7rem;
+    gap: 3rem;
   }
 
   .services .cards {
@@ -666,6 +674,22 @@ body {
     /* Increase width even more */
     gap: 2rem;
     /* Further reduce the gap */
+  }
+
+  .testimonials .container {
+    flex-direction: column;
+  }
+
+  .testimonials .container form {
+    background-color: var(--deep-orange);
+    border-radius: 2rem;
+    width: 100%;
+    min-height: 60vh;
+
+  }
+
+  .testimonials .container .content {
+    width: 100%;
   }
 
   .services .cards .eachCard {
@@ -713,7 +737,6 @@ body {
     align-items: flex-start;
     gap: 2rem;
     width: 100%;
-
   }
 
   .about .container .content .options {
@@ -721,15 +744,37 @@ body {
   }
 
   .why .container2 .right {
-    width: 90%;
+    width: 100%;
     /* border: 1px solid red; */
     margin: auto;
   }
 
+
+
   .why .container2 .right .item {
     align-items: flex-start;
     flex-direction: column;
+    margin: 1rem;
+    margin-bottom: 4rem;
+    align-items: center;
+    gap: 1rem;
     /* border: 1px solid red; */
+  }
+.why .container2 .right .item .icon {
+  /* border: 1px solid rgb(99, 99, 99); */
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 10px;
+  max-width: 8rem;
+  max-height: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  display: none;
+}
+  .why .container2 .right .item .icon {
+    /* border: 1px solid rgb(99, 99, 99); */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 10px;
+  
   }
 
   .why .container2 .right .text {

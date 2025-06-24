@@ -1,0 +1,34 @@
+.privacy .container {
+    /* border: 1px solid red; */
+    width: 95%;
+    margin: 4rem auto;
+}
+
+.privacy .container h1 {
+    font-size: var(--font-heading2);
+    margin-bottom: 3rem;
+    color: var(--header-color);
+}
+
+.privacy .container div {
+    margin-bottom: 3rem;
+}
+
+.privacy .container h2 {
+    font-size: var(--font-heading3);
+    margin-bottom: 1rem;
+    color: var(--header-color);
+}
+
+.privacy .container p {
+    font-size: var(--font-para2);
+    color: var(--sub-header-color);
+    font-weight: 500;
+}
+
+.privacy .container ul {
+    margin: 1rem;
+    font-size: var(--font-para3);
+    list-style: disc;
+    color: var(--sub-header-color);
+}

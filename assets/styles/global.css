@@ -5,7 +5,6 @@
     /* font-size  */
     /*
     Syntax: clamp(minimum_value, preferred_value, maximum_value)
-
     - minimum_value: The smallest size the font will be.
     - preferred_value: A value relative to the viewport width (e.g., 5vw for 5% of viewport width).
     - maximum_value: The largest size the font will be.
@@ -20,7 +19,7 @@
     --font-para4: clamp(1rem, 1.2vw, 1.1rem);
     /* font-color  */
     --header-color: #1c1f35;
-    --sub-header-color: #4d4d4d;
+    --sub-header-color: #454545;
     --deep-orange: #f86b21;
     --light-blue: #F2F7FA;
     --deep-blue: #1D4394;
@@ -113,6 +112,10 @@ img {
     display: block;
 }
 
+p {
+    font-weight: 500;
+}
+
 /* Reset default block and inline elements' spacing */
 article,
 aside,
@@ -159,6 +162,7 @@ body {
     padding: 1rem 5%;
 }
 
+
 .nav #res-menu {
     display: none;
 }
@@ -171,15 +175,15 @@ body {
     gap: 0.8rem;
     color: var(--header-color);
     /* border: 1px solid red; */
-
 }
 
 .top-info .social {
     border-left: 2px solid black;
     padding-left: 1rem;
+
     display: flex;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: space-between;
     gap: 1rem;
     color: var(--header-color);
 }
@@ -313,6 +317,15 @@ body {
         padding: 1rem 2rem;
     }
 
+    .top-info .social {
+        width: 100%;
+    }
+
+    .top-info .social {
+        border-left: 0px solid black;
+        padding-left: 0rem;
+    }
+
     .nav #res-menu {
         position: fixed;
         color: white;
@@ -344,10 +357,11 @@ body {
 
     .top-info {
         flex-direction: column;
-        align-items: flex-start;
-
+        align-items: flex-end;
     }
-
+    .nav .bottom {
+        padding: 1rem 2rem;
+    }
     .nav .bottom .menu {
         display: none;
     }
@@ -361,6 +375,11 @@ body {
     }
 }
 
+@media (max-width: 454px) {
+    .nav .top img {
+        width: 5rem;
+    }
+}
 
 
 
@@ -408,7 +427,7 @@ footer .anchor_tags a:hover {
     text-decoration: underline;
 }
 
-footer .anchor_tags a::before {
+/* footer .anchor_tags a::before {
 
     content: "";
     position: absolute;
@@ -422,7 +441,7 @@ footer .anchor_tags a::before {
 
 
 
-}
+} */
 
 footer iframe {
     width: 100%;

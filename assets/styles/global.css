@@ -262,12 +262,12 @@ body {
 .nav .bottom .button {
     height: 6rem;
     display: flex;
-
     align-items: center;
     justify-content: center;
     height: 100%;
     border: none;
-    background-color: white;
+    background-color: var(--deep-orange);
+    color: white;
     outline: none;
     padding: 0rem 2rem;
     min-height: 6rem;
@@ -276,8 +276,8 @@ body {
 }
 
 .nav .bottom .button:hover {
-    background-color: var(--deep-orange);
-    color: white;
+    background-color: white;
+    color: black;
 }
 
 .nav .bottom button {
@@ -359,9 +359,11 @@ body {
         flex-direction: column;
         align-items: flex-end;
     }
+
     .nav .bottom {
         padding: 1rem 2rem;
     }
+
     .nav .bottom .menu {
         display: none;
     }

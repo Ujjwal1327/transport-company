@@ -504,6 +504,93 @@ body {
     justify-content: center;
 }
 
+.pnc .bottom .contact {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    margin-top: 6rem;
+    flex-wrap: wrap;
+    
+}
+
+.pnc .bottom .contact>div:nth-child(1) {
+    display: flex;
+    margin-bottom: 2rem;
+    align-items: center;
+    justify-content: center;
+    text-wrap: nowrap;
+    border: 1px solid green;
+    font-size: var(--font-para2);
+    background-color: rgb(78, 78, 252);
+    color: white;
+    gap: 1rem;
+    border-radius: 0.3rem;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    padding: 1rem 2rem;
+    margin-right: 5rem;
+}
+
+.pnc .bottom .contact>div:nth-child(1) div {
+    background-color: white;
+    padding: 0.5rem;
+    border-radius: 0.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pnc .bottom .contact>div:nth-child(1) div img {
+    width: 2rem;
+}
+
+.pnc .bottom .contact>div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pnc .bottom .contact>div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.pnc .bottom .contact>div .call {
+    /* border: 1px solid red; */
+    background-color: rgb(255, 160, 160);
+    padding: 1rem;
+    border-radius: 50%;
+}
+
+.pnc .bottom .contact>div .call img {
+    width: 3rem;
+}
+
+.pnc .bottom .contact>div .number {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    /* border: 1px solid red; */
+    font-size: var(--font-para2);
+    text-wrap: nowrap;
+}
+
+.pnc .bottom .contact>div .number>span:nth-child(1) {
+    font-weight: bold;
+    color: var(--deep-orange);
+}
+
+.pnc .bottom .contact>div .number>span:nth-child(2) {
+    font-weight: bold;
+    font-size: var(--font-para3);
+
+    color: var(--header-color);
+}
 
 /* @media quereis  */
 @media (max-width: 1100px) {
@@ -656,12 +743,13 @@ body {
         /* gap: 5rem; */
         row-gap: 3rem;
     }
-    
+
     .priority {
         padding: 4rem 2rem 0rem 2rem;
         padding-bottom: 0rem;
 
     }
+
     .priority .container {
         padding: 1rem;
         border-radius: 1rem;

@@ -21,7 +21,7 @@
     /* border: 1px solid red; */
     border-radius: 1.3rem;
     background-color: #1D4394;
-    
+
 }
 
 
@@ -128,25 +128,29 @@
     gap: 3rem;
 }
 
-.second-screen .bottom div {
+.second-screen .bottom>div {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 1rem;
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
+    /* border: 1px solid red; */
 }
 
 .second-screen .bottom div .icon {
     background-color: blue;
     /* padding: 1rem; */
-    min-height: 7rem;
-    min-width: 7rem;
+    min-height: 5rem;
+    min-width: 5rem;
     color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 50%;
 }
 
 .second-screen .bottom div .icon i {
-    font-size: 4rem;
+    font-size: 2rem;
 }
 
 .second-screen .bottom div div:nth-child(2) {
@@ -164,7 +168,7 @@
 }
 
 .second-screen .bottom div div:nth-child(2) span {
-    font-size: var(--font-para2);
+    font-size: var(--font-para3);
     letter-spacing: 1px;
 }
 
@@ -191,7 +195,7 @@
 .third-screen .container .right {
     flex: 1;
     padding: 5rem;
-    background-color: blue;
+    background-color: var(--deep-blue);
     width: 100%;
 }
 
@@ -229,7 +233,7 @@
 .third-screen .container .right form .row1 div:nth-child(1) p {
     width: fit-content;
     /* border: 1px solid red; */
-    margin:1rem  2rem ;
+    margin: 1rem 2rem;
 
 }
 
@@ -298,7 +302,7 @@
 
 .third-screen .container .right form p a {
     text-decoration: underline;
-    color: orange;
+    color: var(--deep-orange);
 }
 
 @media (max-width: 1100px) {

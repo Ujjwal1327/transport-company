@@ -9,3 +9,7 @@ hamBurger.addEventListener("click", () => {
     const resMenu = document.getElementById("res-menu")
     resMenu.style.display = "flex";
 })
+
+document.getElementById("move-to-contact").addEventListener("click", function () {
+    window.location.href = "contact.html";
+});

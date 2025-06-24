@@ -266,7 +266,6 @@ body {
   background-color: white;
   padding: 1rem;
   border-radius: 0.4rem;
-
 }
 
 .about .container .content .contact>div {
@@ -760,21 +759,23 @@ body {
     gap: 1rem;
     /* border: 1px solid red; */
   }
-.why .container2 .right .item .icon {
-  /* border: 1px solid rgb(99, 99, 99); */
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 10px;
-  max-width: 8rem;
-  max-height: 8rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  display: none;
-}
+
   .why .container2 .right .item .icon {
     /* border: 1px solid rgb(99, 99, 99); */
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 10px;
-  
+    max-width: 8rem;
+    max-height: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    display: none;
+  }
+
+  .why .container2 .right .item .icon {
+    /* border: 1px solid rgb(99, 99, 99); */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 10px;
+
   }
 
   .why .container2 .right .text {

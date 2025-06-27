@@ -13,7 +13,7 @@
     /* Scales from 35px to 70px, with 6vw in between */
     --font-heading2: clamp(2.5rem, 4.5vw, 5rem);
     --font-heading3: clamp(1.8rem, 3vw, 3.5rem);
-    --font-para1: clamp(1.6rem, 2.5vw, 2.2rem);
+    --font-para1: clamp(1.8rem, 2.5vw, 2.2rem);
     --font-para2: clamp(1.4rem, 2vw, 1.8rem);
     --font-para3: clamp(1.3rem, 1.5vw, 1.4rem);
     --font-para4: clamp(1rem, 1.2vw, 1.1rem);
@@ -23,7 +23,7 @@
     --deep-orange: #f86b21;
     --light-blue: #F2F7FA;
     --deep-blue: #1D4394;
-
+    --orange-gradient: linear-gradient(to bottom right, #F86C21, #FF921E);
 }
 
 
@@ -111,7 +111,6 @@ img {
     height: auto;
     display: block;
 }
-
 p {
     font-weight: 500;
 }

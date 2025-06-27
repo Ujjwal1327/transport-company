@@ -1,0 +1,1013 @@
+body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-optical-sizing: auto;
+}
+
+p {
+    font-weight: 500;
+}
+
+/* ************************************************************* */
+/* Landing  */
+/* ************************************************************* */
+.landing {
+    min-height: 60vh;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background: url("/assets/images/footer_BG.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.landing h1 {
+    font-size: var(--font-heading1);
+    font-weight: bold;
+    color: transparent;
+    font-size: 7rem;
+    font-family: sans-serif;
+    -webkit-text-stroke: 2px white;
+    /* White outline */
+    text-transform: uppercase;
+}
+
+/* ************************************************************* */
+/* first  */
+/* ************************************************************* */
+.first {
+    background-color: var(--light-blue);
+    padding: 5rem 10rem;
+}
+
+.first h2 {
+    font-size: var(--font-heading3);
+    margin-bottom: 3rem;
+}
+
+.first p {
+    font-size: var(--font-para2);
+    margin-bottom: 2rem;
+}
+
+/* ************************************************************* */
+/* second  */
+/* ************************************************************* */
+.second {
+    padding: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.second .img-wrapper {
+    flex: 0 0 30%;
+}
+
+.second .img-wrapper img {
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+}
+
+.second .content {
+    flex: 1;
+    text-align: right;
+}
+
+.second .content h2 {
+    font-size: var(--font-heading3);
+}
+
+/* ************************************************************* */
+/* why  */
+/* ************************************************************* */
+.why {
+    padding: 5rem 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: var(--light-blue);
+}
+
+.why h2 {
+    font-size: var(--font-heading3);
+    color: var(--header-color);
+}
+
+.why>p {
+    color: var(--sub-header-color);
+    font-size: var(--font-para2);
+    margin-bottom: 3rem;
+}
+
+.why .container {
+    /* border: 1px solid red; */
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 3rem;
+}
+
+.why .container>div {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 2rem;
+}
+
+.why .container>div .icon {
+    min-width: 2.5rem;
+    min-height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--deep-orange);
+    color: white;
+    border-radius: 50%;
+}
+
+.why .container>div .icon i {
+    font-size: var(--font-para3);
+}
+
+.why .container .content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.why .container .content span {
+    font-size: var(--font-para2);
+    color: var(--header-color);
+    font-weight: bold;
+}
+
+.why .container .content p {
+    font-size: var(--font-para3);
+    color: var(--sub-header-color);
+}
+
+
+/* ************************************************************* */
+/* step  */
+/* ************************************************************* */
+.steps {
+    background-color: var(--deep-blue);
+    padding: 5rem 10rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    flex-direction: column;
+}
+
+.steps>h2 {
+    font-size: var(--font-heading3);
+    color: var(--header-color);
+    color: white;
+}
+
+.steps>p {
+    font-size: var(--font-para2);
+    color: var(--sub-header-color);
+    color: white;
+}
+
+.steps>span {
+    color: var(--deep-orange);
+    font-size: var(--font-para1);
+    font-weight: bold;
+    margin: 1rem 0rem;
+}
+
+.steps .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3rem;
+    width: 80%;
+}
+
+.steps .container>div {
+    width: 100%;
+    background-color: white;
+    border-radius: 0.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1rem;
+    text-align: left;
+    flex: 1;
+}
+
+.steps .container>div h3 {
+    background: var(--orange-gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: var(--font-heading1);
+}
+
+.steps .container>div span {
+    font-size: var(--font-para2);
+    color: var(--header-color);
+    font-weight: bold;
+
+}
+
+.steps .container>div p {
+    font-size: var(--font-para2);
+    color: var(--sub-header-color);
+    margin-bottom: 2rem;
+}
+
+.steps .container>div a {
+    color: var(--deep-orange);
+    font-size: var(--font-para3);
+    margin-top: auto;
+}
+
+.steps .container>div a:hover i {
+    transform: translateX(1rem);
+}
+
+.steps .container>div a i {
+    /* margin-left: 1rem; */
+    transition: all ease 0.3s;
+}
+
+.steps p:last-child {
+    font-size: var(--font-para3);
+    margin-top: 4rem;
+}
+
+/* ************************************************************* */
+/* charges  */
+/* ************************************************************* */
+
+.charges {
+    /* border: 1px solid; */
+}
+
+.charges .container1 {
+    background: url("/assets/images/about-page-exp-bg.jpg");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: var(--font-heading3);
+}
+
+.charges .container1 h2 {
+    margin: 7rem 3rem;
+    text-align: center;
+}
+
+.charges .container2 {
+    padding: 5rem 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6rem;
+}
+
+.charges .container2 .left {
+    width: 35%;
+}
+
+.charges .container2 .left h3 {
+    font-size: var(--font-heading3);
+    font-family: "Ubuntu", sans-serif;
+    padding-left: 1rem;
+    border-left: 0.4rem solid var(--deep-orange);
+    margin-bottom: 2rem;
+}
+
+.charges .container2 .left p {
+    font-size: var(--font-para2);
+    padding-left: 1rem;
+    border-left: 1rem solid white;
+}
+
+.charges .container2 .right {
+    flex: 1;
+}
+
+.charges .container2 .right>.each {
+    padding-bottom: 2rem;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.charges .container2 .right .each::after {
+    position: absolute;
+    left: 12.5px;
+    /* aligned to center of circle */
+    top: 0;
+    transform: translateX(-50%);
+    bottom: 0;
+    width: 2px;
+    background-color: rgb(73, 73, 73);
+    content: '';
+    z-index: 70;
+}
+
+.charges .container2 .right>div {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.charges .container2 .right>div .number {
+    min-width: 2.5rem;
+    min-height: 2.5rem;
+    z-index: 77;
+    background-color: var(--deep-blue);
+    color: white;
+    border-radius: 50%;
+    font-size: var(--font-para3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.charges .container2 .right>div .content span {
+    color: var(--header-color);
+    font-size: var(--font-para1);
+    font-weight: bold;
+
+
+}
+
+.charges .container2 .right>div .content p {
+    color: var(--sub-header-color);
+    font-size: var(--font-para2);
+}
+
+/* ************************************************************* */
+/* packaging  */
+/* ************************************************************* */
+.packaging {
+    background-color: var(--light-blue);
+    padding: 5rem 10rem;
+    text-transform: capitalize;
+    font-family: "Ubuntu", sans-serif;
+
+}
+
+.packaging>h2 {
+    text-align: center;
+    font-size: var(--font-heading3);
+    margin-bottom: 4rem;
+}
+
+.packaging .container1 {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    gap: 4rem;
+    /* border: 1px solid ; */
+    margin-bottom: 5rem;
+}
+
+.packaging .container1 .each {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    gap: 1rem;
+    flex: 1;
+    /* border: 1px solid red; */
+}
+
+.packaging .container1 .adv {
+    flex: 1.5;
+}
+
+.packaging .container1 .each img {
+    flex: 1;
+    /* border: 1px solid red; */
+}
+
+.packaging .container1 .each span {
+    position: relative;
+    font-weight: bold;
+    color: var(--header-color);
+    font-size: var(--font-para1);
+}
+
+.packaging .container1 .each span::after {
+    position: absolute;
+    content: "";
+    background-color: var(--deep-orange);
+    width: 70%;
+    transform: translate(-50%);
+    height: 3px;
+    bottom: -20%;
+    left: 50%;
+}
+
+.packaging .container1 .each p {
+    font-size: var(--font-para2);
+    font-weight: 300;
+    text-align: center;
+}
+
+.packaging .container2 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+    flex-direction: column;
+}
+
+.packaging .container2 h3 {
+    font-size: var(--font-para1);
+    font-weight: bold;
+    color: var(--header-color);
+    font-family: "Ubuntu", sans-serif;
+}
+
+.packaging .container2 h3 {
+    font-size: var(--font-para1);
+    font-weight: bold;
+    color: var(--header-color);
+    font-family: "Ubuntu", sans-serif;
+}
+
+.packaging .container2 .options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    row-gap: 1.5rem;
+    width: 100%;
+}
+
+.packaging .container2 .options .each {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+.packaging .container2 .options .each .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--deep-orange);
+    color: white;
+    min-height: 2.5rem;
+    min-width: 2.5rem;
+    font-weight: var(--font-para3);
+    border-radius: 50%;
+}
+
+.packaging .container2 .options .each p {
+    font-size: var(--font-para2);
+}
+
+.packaging .container2>p {
+    font-size: var(--font-para2);
+    font-weight: bold;
+    color: var(--header-color);
+}
+
+/* ************************************************************* */
+/* insurance  */
+/* ************************************************************* */
+
+.insurance {
+    padding: 5rem 10rem;
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-start;
+    gap: 2rem;
+}
+
+.insurance .left {
+    border-left: 0.2rem solid var(--deep-orange);
+    padding-left: 1rem;
+    flex: 1;
+}
+
+.insurance .left h2 {
+    font-size: var(--font-heading3);
+    color: var(--header-color);
+    margin-bottom: 2rem;
+}
+
+.insurance .left p {
+    font-size: var(--font-para3);
+    color: var(--sub-header-color);
+}
+
+.insurance .right {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    flex: 1;
+}
+
+.insurance .right .each {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.insurance .right .each p {
+    font-size: var(--font-para3);
+    color: var(--sub-header-color);
+}
+
+.insurance .right .each .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--deep-orange);
+    color: white;
+    min-height: 2.5rem;
+    min-width: 2.5rem;
+    font-weight: var(--font-para3);
+    border-radius: 50%;
+}
+
+
+/* ************************************************************* */
+/* insurance  */
+/* ************************************************************* */
+.delivery {
+    padding: 5rem 10rem;
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-start;
+    gap: 2rem;
+    background-color: var(--light-blue);
+}
+
+.delivery .left {
+    border-left: 0.2rem solid var(--deep-orange);
+    padding-left: 1rem;
+    flex: 1;
+}
+
+.delivery .left h2 {
+    font-size: var(--font-heading3);
+    color: var(--header-color);
+    margin-bottom: 2rem;
+}
+
+.delivery .left p {
+    font-size: var(--font-para3);
+    color: var(--sub-header-color);
+}
+
+.delivery .right {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    flex: 1;
+    gap: 2rem;
+}
+
+.delivery .right .each {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.delivery .right .each p {
+    font-size: var(--font-para3);
+    color: var(--sub-header-color);
+}
+
+.delivery .right .each span {
+    font-size: var(--font-para2);
+    color: var(--header-color);
+    font-weight: bold;
+}
+
+.delivery .right .each .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--deep-orange);
+    color: white;
+    min-height: 2.5rem;
+    min-width: 2.5rem;
+    font-weight: var(--font-para3);
+    border-radius: 50%;
+}
+
+
+
+/* ************************************************************* */
+/* cities  */
+/* ************************************************************* */
+
+.cities {
+    background-color: var(--deep-blue);
+}
+
+.cities .container1 {
+    background: url("/assets/images/about-page-exp-bg.jpg");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-direction: column;
+    padding: 7rem 3rem;
+}
+
+.cities .container1 h2 {
+    text-align: center;
+    font-size: var(--font-heading3);
+    font-family: "Ubuntu";
+}
+
+.cities .container1 p {
+    text-align: center;
+    font-size: var(--font-para4);
+}
+
+
+.cities .container2 {
+    background: url("/assets/images/flat-globe.png");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-direction: column;
+    padding: 5rem 10rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 2rem;
+}
+
+.cities .container2 .each {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+
+}
+
+
+
+.cities .container2 .each p {
+    font-size: var(--font-para1);
+    color: white;
+    text-transform: capitalize;
+}
+
+.cities .container2 .each .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--deep-orange);
+    color: white;
+    min-height: 2.2rem;
+    min-width: 2.2rem;
+    font-weight: var(--font-para3);
+    border-radius: 50%;
+}
+
+/* ************************************************************* */
+/* support  */
+/* ************************************************************* */
+
+.support {
+    text-align: center;
+    padding: 5rem 10rem;
+}
+
+.support>h2 {
+    color: var(--header-color);
+    font-size: var(--font-heading3);
+}
+
+.support>p {
+    color: var(--sub-header-color);
+    margin: 2rem 0rem 5rem 0rem;
+    font-size: var(--font-para2);
+}
+
+.support .wrapper {
+    display: flex;
+    margin: auto;
+    width: fit-content;
+    align-items: space-between;
+    justify-content: flex-start;
+    gap: 1rem;
+    flex-direction: column;
+
+}
+
+.support .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+    text-align: left;
+}
+
+
+
+.support .container .each {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+
+}
+
+.support .container .each p {
+    font-size: var(--font-para3);
+    color: var(--sub-header-color);
+    text-transform: capitalize;
+}
+
+.support .container .each .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--deep-orange);
+    color: white;
+    min-height: 2.2rem;
+    min-width: 2.2rem;
+    font-weight: var(--font-para3);
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1100px) {
+    .landing {
+        min-height: 40vh;
+    }
+
+    .landing h1 {
+        font-size: 5rem;
+    }
+
+    .first {
+        background-color: var(--light-blue);
+        padding: 4rem;
+    }
+
+    .first h2 {
+        font-size: var(--font-heading3);
+        margin-bottom: 3rem;
+    }
+
+    .first p {
+        font-size: var(--font-para2);
+        margin-bottom: 2rem;
+    }
+
+    .second {
+        gap: 0rem;
+    }
+
+    .second .img-wrapper {
+        flex: 0 0 40%;
+    }
+
+    .why {
+        padding: 5rem;
+    }
+
+    .steps {
+        padding: 5rem;
+    }
+
+    .steps .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 3rem;
+        width: 100%;
+    }
+
+    .charges .container2 {
+        padding: 5rem;
+        gap: 1rem;
+    }
+
+    .packaging {
+        padding: 5rem;
+    }
+
+    .insurance {
+        padding: 5rem;
+    }
+
+    .insurance .right {
+        gap: 1rem;
+    }
+
+    .insurance .right .each {
+        gap: 1rem;
+    }
+
+    .delivery {
+        padding: 5rem;
+    }
+
+    .delivery .right {
+        gap: 1rem;
+    }
+
+    .delivery .right .each {
+        gap: 1rem;
+    }
+
+    .cities .container2 {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        padding: 5rem;
+    }
+
+    .support {
+        padding: 3rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .landing {
+        min-height: 30vh;
+    }
+
+    .landing h1 {
+        margin: 5rem;
+        font-size: 4rem;
+    }
+
+    .first {
+        background-color: var(--light-blue);
+        padding: 3rem;
+    }
+
+    .first h2 {
+        font-size: var(--font-para1);
+        margin-bottom: 2rem;
+    }
+
+    .first p {
+        font-size: var(--font-para2);
+        margin-bottom: 1rem;
+    }
+
+    .second {
+        padding: 3rem;
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .second .img-wrapper {
+        flex: none;
+        width: 100%;
+    }
+
+    .second .img-wrapper img {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .second .content {
+        text-align: center;
+    }
+
+    .why {
+        padding: 3rem;
+
+    }
+
+    .why .container {
+        grid-template-columns: 1fr;
+    }
+
+    .steps {
+        padding: 3rem;
+    }
+
+    .steps .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        width: 100%;
+    }
+
+    .charges .container1 h2 {
+        margin: 5rem 3rem;
+        text-align: center;
+    }
+
+    .charges .container2 {
+        flex-direction: column;
+        gap: 4rem;
+        padding: 3rem;
+    }
+
+    .charges .container2 .left {
+        width: 100%;
+    }
+
+    .charges .container2 .left h3 {
+        font-size: var(--font-heading3);
+        font-family: "Ubuntu", sans-serif;
+        padding-left: 1rem;
+        border-left: 0.4rem solid var(--deep-orange);
+        margin-bottom: 1rem;
+    }
+
+    .packaging {
+        padding: 3rem;
+    }
+
+    .packaging .container1 {
+        gap: 1rem;
+    }
+
+    .insurance {
+        padding: 3rem;
+    }
+
+    .delivery {
+        padding: 3rem;
+    }
+
+    .cities .container2 {
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 3rem;
+    }
+
+    .cities .container2 .each p {
+        font-size: var(--font-para2);
+        color: white;
+        text-transform: capitalize;
+    }
+}
+
+@media (max-width: 454px) {
+    .packaging .container1 {
+        gap: 3rem;
+        flex-direction: column;
+    }
+
+    .packaging .container2 .options {
+        grid-template-columns: 1fr;
+    }
+
+    .insurance {
+        padding: 3rem;
+        flex-direction: column;
+    }
+
+    .delivery {
+        padding: 3rem;
+        flex-direction: column;
+    }
+
+    .cities .container2 {
+        overflow: hidden;
+        grid-template-columns: 1fr 1fr;
+        padding: 3rem;
+    }
+}

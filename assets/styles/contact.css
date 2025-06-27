@@ -20,7 +20,7 @@
     gap: 1rem;
     /* border: 1px solid red; */
     border-radius: 1.3rem;
-    background-color: #1D4394;
+    background-color: var(--deep-blue);
 
 }
 
@@ -28,7 +28,7 @@
 .first-screen .top>div {
 
     background-color: white;
-    color: black;
+    color: var(--deep-blue);
     border-radius: 1.3rem;
     padding: 1rem;
     display: flex;
@@ -63,7 +63,7 @@
 
 
 .first-screen .top>div p {
-    color: orange;
+    color: var(--deep-orange);
     font-weight: bolder;
     font-size: var(--font-para2);
     /* border: 1px solid red; */
@@ -71,7 +71,7 @@
 
 .first-screen .top>.right p {
     /* color: orange; */
-    color: black;
+    color: var(--deep-blue);
     font-size: var(--font-para3);
     font-weight: bold;
 }
@@ -114,7 +114,7 @@
 
 
 .second-screen h2 {
-    color: orange;
+    color: var(--deep-orange);
     font-size: var(--font-heading2);
 }
 
@@ -138,7 +138,7 @@
 }
 
 .second-screen .bottom div .icon {
-    background-color: blue;
+    background-color: var(--deep-blue);
     /* padding: 1rem; */
     min-height: 5rem;
     min-width: 5rem;
@@ -219,7 +219,7 @@
 }
 
 .third-screen .container .right form .row1 div:nth-child(1) {
-    background-color: orange;
+    background-color: var(--deep-orange);
     height: 5rem;
     min-width: 200px;
     color: white;
@@ -281,7 +281,7 @@
 
 .third-screen .container .right form button {
     width: 100%;
-    background-color: orange;
+    background-color: var(--deep-orange);
     font-size: var(--font-para2);
     color: white;
     border: none;

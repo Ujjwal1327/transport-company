@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-optical-sizing: auto;
+}
+
+/* ************************************************************* */
+/* Landing  */
+/* ************************************************************* */
+.landing {
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url("/assets/images/footer_BG.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.landing h1 {
+    font-size: var(--font-heading1);
+    font-weight: bold;
+    color: transparent;
+    font-size: 12rem;
+    font-family: sans-serif;
+    -webkit-text-stroke: 2px white;
+    /* White outline */
+    text-transform: uppercase;
+}
+
+/* ************************************************************* */
+/* car  */
+/* ************************************************************* */
+.car .container1 {
+    background: url("/assets/images/about-page-exp-bg.jpg");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    padding: 7rem 1rem;
+    text-align: center;
+}
+
+.car .container1 h2 {
+    text-align: center;
+    font-size: var(--font-heading3);
+}
+
+.car .container2 {
+    padding: 5rem 10rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 2rem;
+    flex-direction: column;
+}
+
+.car .container2>p {
+
+    font-size: var(--font-para2);
+}
+
+.car .container2>h3 {
+
+    font-size: var(--font-para1);
+}
+
+.car .container2>div span {
+    font-weight: bold;
+    color: var(--header-color);
+    display: inline-block;
+    margin-bottom: 1rem;
+    font-size: var(--font-para3);
+}
+
+.car .container2>div p {
+    font-weight: 300;
+    color: var(--sub-header-color);
+    font-size: var(--font-para3);
+}

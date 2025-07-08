@@ -278,6 +278,120 @@ body {
 
 
 
+.factor .container1 {
+    background: url("/assets/images/about-page-exp-bg.jpg");
+    background-size: cover;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    padding: 7rem 1rem;
+    text-align: center;
+}
+
+.factor .container1 h2 {
+    text-align: center;
+    /* border: 1px solid; */
+    margin: auto;
+    font-size: var(--font-heading3);
+}
+
+.factor .container2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 10rem 0rem 10rem;
+}
+
+.factor .container2 .left {
+    flex: 1;
+}
+
+.factor .container2 .left>div {
+    margin-bottom: 5rem;
+}
+
+.factor .container2 .left>div h3 {
+    font-size: var(--font-heading3);
+    color: var(--header-color);
+    margin-bottom: 1rem;
+}
+
+
+.factor .container2 .left>div .options .each {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 1rem;
+    margin-bottom: 0.8rem;
+}
+
+.factor .container2 .left>div .options .each .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 2.2rem;
+    min-height: 2.2rem;
+    font-size: var(--font-para3);
+    border-radius: 50%;
+    color: white;
+    background-color: var(--deep-orange);
+}
+
+.factor .container2 .left>div .options .each p {
+    color: var(--sub-header-color);
+    font-size: var(--font-para2);
+}
+
+.factor .container2 .wrapper {
+    flex: 0 0 30%;
+}
+
+.factor .container2 .wrapper img {
+    width: 100%;
+    height: auto;
+    min-width: 30rem;
+}
+
+.factor .container3 {
+    padding: 2rem 10rem 2rem 10rem;
+}
+
+.factor .container3 div {
+    margin-bottom: 2rem;
+}
+
+.factor .container3 div h3 {
+    font-size: var(--font-heading3);
+    color: var(--header-color);
+    margin-bottom: 1rem;
+}
+
+.factor .container3 div .options .each {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 1rem;
+    margin-bottom: 0.4rem;
+}
+
+.factor .container3 div .options .each .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 2.2rem;
+    min-height: 2.2rem;
+    font-size: var(--font-para3);
+    border-radius: 50%;
+    color: white;
+    background-color: var(--deep-orange);
+}
+
+.factor .container3 div .options .each p {
+    color: var(--sub-header-color);
+    font-size: var(--font-para2);
+}
 
 
 @media (max-width: 1100px) {
@@ -331,6 +445,18 @@ body {
         width: 100%;
     }
 
+    .factor .container2 {
+        padding: 3rem;
+        flex-direction: column;
+    }
+
+    .factor .container2 .wrapper {
+        flex: 0 0 40%;
+    }
+
+    .factor .container3 {
+        padding: 3rem;
+    }
 }
 
 @media (max-width: 767px) {
@@ -392,6 +518,7 @@ body {
     .adv .container2 .img-wrapper {
         flex: 0 0 90%;
     }
+
 
 }
 

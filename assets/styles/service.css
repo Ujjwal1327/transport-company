@@ -81,3 +81,81 @@ body {
     color: var(--sub-header-color);
     font-size: var(--font-para3);
 }
+
+.services {
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    flex-direction: column;
+    min-height: 50vh;
+    background-color: #F2F7FA;
+    padding: 4rem 0rem;
+}
+
+.services>p {
+    width: 80%;
+    font-size: var(--font-para2);
+    text-align: center;
+    color: var(--sub-header-color);
+}
+
+.services .cards {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: stretch;
+    /* ensures all cards are same height */
+    justify-content: center;
+    gap: 4rem;
+    font-size: var(--font-para2);
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.services .cards .eachCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* Distributes space inside */
+    flex: 1 1 30%;
+    background-color: white;
+    border-radius: 0.8rem;
+    overflow: hidden;
+    max-width: 30%;
+    border: 1px solid black;
+}
+
+
+.services .cards .eachCard img {
+    height: 20rem;
+    min-width: 100%;
+}
+
+.services .cards .eachCard h3 {
+    margin: 2rem 0rem;
+    color: var(--header-color);
+}
+
+.services .cards .eachCard p {
+    width: 95%;
+    margin: auto;
+    margin-bottom: 2rem;
+    font-weight: 500;
+    font-size: var(--font-para2);
+    color: var(--sub-header-color);
+}
+
+.services .cards .eachCard a {
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 0.7rem;
+    background-color: var(--deep-blue);
+    color: white;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    margin-bottom: 0px;
+    font-weight: bold;
+}

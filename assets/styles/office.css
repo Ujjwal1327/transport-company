@@ -55,16 +55,16 @@ body {
 /* second  */
 /* ************************************************************* */
 .second {
-    padding: 5rem 10rem;
+    padding: 2rem 10rem;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     gap: 2rem;
-    flex-direction: row-reverse;
+    flex-direction: row;
 }
 
 .second .img-wrapper {
-    flex: 0 0 40%;
+    flex: 0 0 20%;
 }
 
 .second .img-wrapper img {
@@ -79,7 +79,7 @@ body {
 
 .second .content h2 {
     font-size: var(--font-heading3);
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 .second .content p {
@@ -111,22 +111,23 @@ body {
 }
 
 .adv .container2 {
-    padding: 0rem 10rem 5rem 0rem;
+    padding: 4rem 0rem 5rem 10rem;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     gap: 6rem;
+    flex-direction: row-reverse;
 }
 
 
 .adv .container2 .img-wrapper {
-    flex: 0 0 40%;
+    flex: 0 0 35%;
+
 }
 
 .adv .container2 .img-wrapper img {
-    width: 100%;
+    width:100%;
     height: auto;
-    max-width: 500px;
 }
 
 .adv .container2 .right {
@@ -197,6 +198,11 @@ body {
 .adv .container3 h3 {
     font-size: var(--font-heading3);
     color: var(--header-color);
+}
+.adv .container3 > p {
+    font-size: var(--font-para3);
+    margin: 1rem 0rem;
+    color: var(--sub-header-color);
 }
 
 .adv .container3 .options {
@@ -284,6 +290,7 @@ body {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
+    /* border: 1px solid red; */
     justify-content: space-between;
     color: white;
     padding: 7rem 1rem;

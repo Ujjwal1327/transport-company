@@ -9,7 +9,7 @@ body {
 /* Landing  */
 /* ************************************************************* */
 .landing {
-    min-height: 60vh;
+    min-height: 30vh;
     display: flex;
     text-align: center;
     align-items: center;
@@ -93,8 +93,9 @@ body {
     color: white;
     font-size: var(--font-heading3);
 }
+
 .advantages .container1 h2 {
-        margin: 7rem 3rem;
+    margin: 7rem 3rem;
 }
 
 .advantages .container2 {
@@ -330,7 +331,7 @@ body {
 /* @media quereis  */
 @media (max-width: 1100px) {
     .landing {
-        min-height: 40vh;
+        min-height: 20vh;
     }
 
     .landing h1 {
@@ -355,9 +356,11 @@ body {
     .second {
         padding: 4rem;
     }
-.advantages .container1 h2 {
+
+    .advantages .container1 h2 {
         margin: 3rem 1rem;
-}
+    }
+
     .advantages .container2 {
         padding: 4rem;
         gap: 3rem;
@@ -403,7 +406,7 @@ body {
 
 @media (max-width: 767px) {
     .landing {
-        min-height: 30vh;
+        min-height: 20vh;
     }
 
     .landing h1 {

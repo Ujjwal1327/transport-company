@@ -9,12 +9,23 @@ body {
 /* ************************************************************* */
 .landing {
   position: relative;
-  /* border: 1px solid red; */
   min-height: 40vh;
-  background: url("../images/hero.jpg");
-  background-size: cover;
   padding-bottom: 2rem;
+  background-image: linear-gradient(to bottom,
+      rgba(0, 0, 0, 0.6),
+      /* top = darker */
+      rgba(0, 0, 0, 0.6),
+      /* middle = medium */
+      rgba(0, 0, 0, 0.6)
+      /* bottom = lighter */
+    ),
+    url("../images/hero-alt.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
+
 
 .landing .container {
   padding: 1rem 0rem;
@@ -34,11 +45,11 @@ body {
 }
 
 .landing .container p {
-  font-size: var(--font-para1);
+  font-size: var(--font-para2);
   margin: 3rem 0rem;
   width: 90%;
+  font-style: italic;
   margin: auto;
-  letter-spacing: .15rem;
 }
 
 .landing .container a {
@@ -158,7 +169,7 @@ body {
 
 .about .container .aboutImg img {
   border-radius: 1.9rem;
-  width: 100%;
+  width: 85%;
   /* object-fit: cover; */
   /* border: 1px solid red; */
 }
@@ -338,7 +349,7 @@ body {
   display: flex;
   align-items: stretch;
   /* ensures all cards are same height */
-  justify-content: center;
+  justify-content: flex-start;
   gap: 4rem;
   font-size: var(--font-para2);
   text-align: center;

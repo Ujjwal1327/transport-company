@@ -1,0 +1,340 @@
+body {
+  margin: 0;
+  padding: 0rem;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-optical-sizing: auto;
+}
+
+/* ************************************************************* */
+/* Landing  */
+/* ************************************************************* */
+.landing {
+  min-height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("/assets/images/footer_BG.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.landing h1 {
+  font-size: var(--font-heading1);
+  font-weight: bold;
+  color: transparent;
+  text-align: center;
+  font-size: 12rem;
+  font-family: sans-serif;
+  -webkit-text-stroke: 2px white;
+  /* White outline */
+  text-transform: uppercase;
+}
+
+
+
+/* ************************************************************* */
+/* first  */
+/* ************************************************************* */
+.first {
+  background-color: var(--light-blue);
+  padding: 2rem 10rem;
+}
+
+.first h2 {
+  font-size: var(--font-heading3);
+  margin-bottom: 1rem;
+}
+
+.first p {
+  font-size: var(--font-para2);
+  margin-bottom: 2rem;
+}
+
+/* ************************************************************* */
+/* second  */
+/* ************************************************************* */
+
+.second {
+  padding: 2rem 0rem 2rem 10rem;
+  display: flex;
+  padding-right: 0rem;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+
+
+.second h3 {
+  font-size: var(--font-heading3);
+  margin-bottom: 2rem;
+}
+
+.second .left>p {
+  font-size: var(--font-para2);
+  margin-bottom: 2rem;
+}
+
+.second .left .options {}
+
+.second .left .options .each {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+  margin-bottom: .5rem;
+}
+
+.second .left .options .each .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  min-width: 2.2rem;
+  min-height: 2.2rem;
+  color: white;
+  font-size: var(--font-para3);
+  border-radius: 50%;
+  background-color: var(--deep-orange);
+}
+
+.second .left .options .each p {
+  font-size: var(--font-para3);
+  color: var(--header-color);
+  font-weight: bold;
+  font-size: var(--font-para3);
+
+}
+
+.second .wrapper {
+  flex: 0 0 30%;
+}
+
+
+/* ************************************************************* */
+/* third  */
+/* ************************************************************* */
+.third {
+  padding: 2rem 10rem;
+
+}
+
+.third h3 {
+  font-size: var(--font-heading3);
+  color: var(--header-color);
+  margin-bottom: 1rem;
+}
+
+.third p {
+  font-size: var(--font-para2);
+  color: var(--sub-header-color);
+}
+
+
+
+/* ************************************************************* */
+/* third  */
+/* ************************************************************* */
+
+.fourth {
+  padding: 2rem 10rem;
+}
+
+.fourth h3 {
+  font-size: var(--font-heading3);
+  color: var(--header-color);
+  margin-bottom: 2rem;
+
+}
+
+.fourth .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7rem;
+
+}
+
+.fourth .container div {
+  background-color: var(--light-blue);
+  padding: 3rem;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 5px;
+}
+
+.fourth .container div p {
+  font-size: var(--font-para2);
+  color: var(--sub-header-color);
+  margin-bottom: 0.6rem;
+  line-height: 1.4;
+  margin-bottom: 2rem;
+}
+
+.fourth .container div a {
+  display: block;
+  background-color: var(--deep-orange);
+  padding: 1rem;
+  font-size: var(--font-para2);
+  color: white;
+  border-radius: 0.3rem;
+  width: fit-content;
+}
+
+/* ************************************************************* */
+/* fifth  */
+/* ************************************************************* */
+
+.fifth {
+  padding: 4rem 10rem;
+}
+
+.fifth h3 {
+  margin-bottom: 2rem;
+  font-size: var(--font-heading3);
+  color: var(--font-heading3);
+}
+
+.fifth>p {
+  margin-bottom: 2rem;
+  font-size: var(--font-para2);
+  color: var(--suub-font-heading3);
+}
+
+.fifth .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 4rem;
+}
+
+.fifth .container .each {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.fifth .container .each .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2rem;
+  min-width: 2rem;
+  background-color: var(--deep-orange);
+  border-radius: 50%;
+  color: white;
+  font-size: var(--font-para4);
+}
+
+.fifth .container .each p {
+  font-size: var(--font-para3);
+  font-weight: bold;
+  color: var(--header-color);
+}
+
+.fifth .each {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.fifth .each .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2rem;
+  min-width: 2rem;
+  background-color: var(--deep-orange);
+  border-radius: 50%;
+  color: white;
+  font-size: var(--font-para4);
+}
+
+.fifth .each p {
+  font-size: var(--font-para2);
+  color: var(--sub-header-color);
+  margin-bottom: 1rem;
+}
+
+
+@media (max-width: 1100px) {
+  .landing {
+    min-height: 20vh;
+  }
+
+  .landing h1 {
+    font-size: 5rem;
+  }
+
+  .first {
+    background-color: var(--light-blue);
+    padding: 4rem;
+  }
+
+  .first h2 {
+    font-size: var(--font-heading3);
+    margin-bottom: 3rem;
+  }
+
+  .first p {
+    font-size: var(--font-para2);
+    margin-bottom: 2rem;
+  }
+
+  .second {
+    padding: 3rem;
+  }
+
+  .third {
+    padding: 3rem;
+  }
+
+  .fourth {
+    padding: 3rem;
+  }
+
+  .fourth .container {
+    gap: 2rem;
+  }
+
+  .fifth {
+    padding: 3rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .landing {
+    min-height: 20vh;
+  }
+
+  .landing h1 {
+    margin: 5rem;
+    font-size: 4rem;
+  }
+
+  .first {
+    background-color: var(--light-blue);
+    padding: 3rem;
+  }
+
+  .first h2 {
+    font-size: var(--font-para1);
+    margin-bottom: 2rem;
+  }
+
+  .first p {
+    font-size: var(--font-para2);
+    margin-bottom: 1rem;
+  }
+
+  .second {
+    padding: 3rem;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+
+  .fourth .container {
+    flex-direction: column;
+  }
+}
